@@ -7,7 +7,6 @@
 
 from nltk.tokenize import sent_tokenize
 from Atomizer import Atomizer
-
 atomizer = Atomizer("dataSets/part1/suspicious-document00001");
 
 list = atomizer.GetParagraphs()
@@ -15,6 +14,7 @@ for sent in list:
     print(sent)
     print("\n\n\n")
     pass
+    
 
 
 
