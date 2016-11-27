@@ -1,18 +1,13 @@
-#import nltk.data
-
-#tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
-#fp = open("dataSets/part1/suspicious-document00001.txt")
-#data = fp.read()
-#print('\n-----\n'.join(tokenizer.tokenize(data)))
-
+# -*- coding: utf-8 -*-
+import sys
 from nltk.tokenize import sent_tokenize
 from Atomizer import Atomizer
 
-atomizer = Atomizer("dataSets/part1/suspicious-document00001");
+atomizer = Atomizer("dataSets/part1/suspicious-document00005");
 
-list = atomizer.GetParagraphs()
+list = atomizer.GetFullyPlagiarizedFragments()
 for sent in list:
-    print(sent)
+    print(str(sent).encode(sys.stdout.encoding, errors='replace'))
     print("\n\n\n")
     pass
 
