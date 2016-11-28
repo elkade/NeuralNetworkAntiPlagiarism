@@ -4,16 +4,24 @@
 #fp = open("dataSets/part1/suspicious-document00001.txt")
 #data = fp.read()
 #print('\n-----\n'.join(tokenizer.tokenize(data)))
-
+from nltk.tokenize import word_tokenize
 from nltk.tokenize import sent_tokenize
 from Atomizer import Atomizer
+from FeaturesExtractor import FeaturesExtractor
+import nltk
 atomizer = Atomizer("dataSets/part1/suspicious-document00001");
-
+#nltk.download()
+t=word_tokenize('I''m')
 list = atomizer.GetParagraphs()
 for sent in list:
     print(sent)
     print("\n\n\n")
+    e=FeaturesExtractor(sent)
+    g=e.GetFeatures()
+    print(g)
     pass
+
+print(t)
     
 
 
