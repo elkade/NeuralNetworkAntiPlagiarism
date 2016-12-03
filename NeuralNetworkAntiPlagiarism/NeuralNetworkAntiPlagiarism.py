@@ -1,27 +1,20 @@
-#import nltk.data
-
-#tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
-#fp = open("dataSets/part1/suspicious-document00001.txt")
-#data = fp.read()
-#print('\n-----\n'.join(tokenizer.tokenize(data)))
-from nltk.tokenize import word_tokenize
-from nltk.tokenize import sent_tokenize
 from Atomizer import Atomizer
 from FeaturesExtractor import FeaturesExtractor
-import nltk
-atomizer = Atomizer("dataSets/part1/suspicious-document00005");
 
-list = atomizer.GetFullyPlagiarizedFragments()
-for sent in list:
-    print(str(sent).encode(sys.stdout.encoding, errors='replace'))
-    print("\n\n\n")
-    e=FeaturesExtractor(sent)
-    g=e.GetFeatures()
-    print(g)
-    pass
-    
-print(t)
-    
+num = 1
+for part in range(1,9):
+    for x in range(1,500):
+        atomizer = Atomizer("dataSets/part{}/suspicious-document{:05d}".format(part, num))
+        frags = atomizer.GetFullyPlagiarizedFragments()
+        for frag in frags:
+            featuresExtractor = FeaturesExtractor(frag)
+            frag['features'] = featuresExtractor.GetFeatures()
+            pass
 
+
+
+        num+=1
+        pass
+pass
 
 
