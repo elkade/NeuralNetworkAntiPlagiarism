@@ -2,11 +2,12 @@ from Atomizer import Atomizer
 from FeaturesExtractor import FeaturesExtractor
 from StylesComparer import StylesComparer
 import time
+import pickle
 
 def prepareTraining(vec):
     for i in range(0,len(vec)):
         frag1 = vec[i]
-        for j in range(i+1,len(vec)):
+        for j in range(i + 1,len(vec)):
             frag2 = vec[j]
             if frag1['ratio'] > 0.5 or frag2['ratio'] > 0.5:
                 ratio = frag1['ratio'] * frag2['ratio']
@@ -15,8 +16,6 @@ def prepareTraining(vec):
             pass
         pass
     
-X=[]
-y=[]
 
 stop = -1
 start = time.time()
@@ -24,12 +23,15 @@ start = time.time()
 #training
 num = 1
 for part in range(1,10):
+    X = []
+    y = []
     for x in range(1,501):
         print(num)
         print(time.time() - start)
-        atomizer = Atomizer("dataSets/part{}/suspicious-document{:05d}".format(part, num))
+        path = "part{}/suspicious-document{:05d}".format(part, 500 * (part-1) + x)
+        atomizer = Atomizer("dataSets/" + path)
         frags = atomizer.GetFullyPlagiarizedFragments()
-        vec=[]
+        vec = []
         for frag in frags:
             featuresExtractor = FeaturesExtractor(frag)
             vec.append({'feats': featuresExtractor.GetFeatures(), 'ratio': frag['ratio']})
@@ -39,13 +41,26 @@ for part in range(1,10):
             X.append(_X)
             y.append(_y)#zamiast przechowywać w pamięci warto zapisać listę do pliku
         num+=1
-        if num == stop and stop > 0:
-            end = time.time()
-            print(end - start)
-            time.sleep(10)
+        #if num == stop and stop > 0:
         pass
+    with open('features/part{}'.format(part), 'wb+') as handle:
+        pickle.dump({'X':X,'y':y}, handle)
+
+    print(time.time() - start)
     pass
-comparer = StylesComparer(0);
+
+
+X = []
+y = []
+for part in range(1,10):
+    try:
+        with open('features/part{}'.format(part), 'rb') as handle:
+            storedFeatures = pickle.load(handle)
+        X.extend(storedFeatures['X'])
+        y.extend(storedFeatures['y'])
+    except:
+        print('błąd odczytu pliku features/part{}'.format(part))
+comparer = StylesComparer(0)
 comparer.Train(X,y)#i teraz ją odczytać
 
 
@@ -53,7 +68,7 @@ comparer.Train(X,y)#i teraz ją odczytać
 for num in range(4501,4754):
     atomizer = Atomizer("dataSets/part{}/suspicious-document{:05d}".format(10, num))
     frags = atomizer.GetParagraphs()
-    vec=[]
+    vec = []
     for frag in frags:
         featuresExtractor = FeaturesExtractor(frag)
         vec.append({'feats': featuresExtractor.GetFeatures(), 'ratio': frag['ratio']})
