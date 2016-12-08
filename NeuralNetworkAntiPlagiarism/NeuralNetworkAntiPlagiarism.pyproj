@@ -12,7 +12,7 @@
     <OutputPath>.</OutputPath>
     <Name>NeuralNetworkAntiPlagiarism</Name>
     <RootNamespace>NeuralNetworkAntiPlagiarism</RootNamespace>
-    <InterpreterId>{b3ee4921-0945-422e-b180-5b3e240a948c}</InterpreterId>
+    <InterpreterId>{62560ef3-be8d-4ae2-994f-4cfcd8047739}</InterpreterId>
     <InterpreterVersion>3.5</InterpreterVersion>
     <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
@@ -31,13 +31,16 @@
     <Compile Include="FeaturesExtractor.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="StylesComparer.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="NeuralNetworkAntiPlagiarism.py" />
     <Compile Include="TextFeatures.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <InterpreterReference Include="{b3ee4921-0945-422e-b180-5b3e240a948c}\3.5" />
+    <InterpreterReference Include="{62560ef3-be8d-4ae2-994f-4cfcd8047739}\3.5" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
