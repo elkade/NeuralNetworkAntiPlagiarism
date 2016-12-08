@@ -1,8 +1,13 @@
 class StylesComparer(object):
-    def __init__(self, neuralNetwork):
-        self.neuralNetwork = neuralNetwork
+    def __init__(self, clf):
+        self.clf = clf
         pass
 
-    def Train():
+    def Train(X, y):
+        clf.fit(X, y)
+        pass
 
+    def Calculate(X):
+        result = clf.predict(X)
+        return result
         pass
