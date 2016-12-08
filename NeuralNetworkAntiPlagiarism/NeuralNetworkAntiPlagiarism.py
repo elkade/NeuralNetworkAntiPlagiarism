@@ -1,4 +1,4 @@
-from Atomizer import Atomizer
+﻿from Atomizer import Atomizer
 from FeaturesExtractor import FeaturesExtractor
 from StylesComparer import StylesComparer
 import time
@@ -20,9 +20,12 @@ def prepareTraining(vec):
 stop = -1
 start = time.time()
 
+startNum = 1
+endNum = 3
+
 #training
 num = 1
-for part in range(1,10):
+for part in range(startNum, endNum):
     X = []
     y = []
     for x in range(1,10):
@@ -52,7 +55,7 @@ for part in range(1,10):
 
 X = []
 y = []
-for part in range(1,10):
+for part in range(startNum, endNum):
     try:
         with open('features/part{}'.format(part), 'rb') as handle:
             storedFeatures = pickle.load(handle)
@@ -60,11 +63,13 @@ for part in range(1,10):
         y.extend(storedFeatures['y'])
     except:
         print('błąd odczytu pliku features/part{}'.format(part))
-comparer = StylesComparer(0)
+
+clf = MLPClassifier(solver='lbfgs', alpha=1e-5,  hidden_layer_sizes=(15,), random_state=1)
+comparer = StylesComparer(clf)
 comparer.Train(X,y)#i teraz ją odczytać
 
 
-#testing
+##testing
 for num in range(4501,4754):
     atomizer = Atomizer("dataSets/part{}/suspicious-document{:05d}".format(10, num))
     frags = atomizer.GetParagraphs()
@@ -73,6 +78,7 @@ for num in range(4501,4754):
         featuresExtractor = FeaturesExtractor(frag)
         vec.append({'feats': featuresExtractor.GetFeatures(), 'ratio': frag['ratio']})
         pass
+    
     #tutaj sprwdzenie jakoś tego, co zwróci sieć
     num+=1
     pass
