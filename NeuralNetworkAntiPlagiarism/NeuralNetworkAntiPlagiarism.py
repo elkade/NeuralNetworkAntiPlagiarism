@@ -45,13 +45,13 @@ for part in range(startNum, endNum):
             y.append(_y)#zamiast przechowywać w pamięci warto zapisać listę do pliku
         num+=1
         #if num == stop and stop > 0:
-        pass
+    pass
     with open('features/part{}'.format(part), 'wb+') as handle:
         pickle.dump({'X':X,'y':y}, handle)
-
+    
     print(time.time() - start)
     pass
-
+    
 
 X = []
 y = []
