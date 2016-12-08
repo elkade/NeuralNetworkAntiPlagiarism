@@ -25,7 +25,7 @@ num = 1
 for part in range(1,10):
     X = []
     y = []
-    for x in range(1,501):
+    for x in range(1,10):
         print(num)
         print(time.time() - start)
         path = "part{}/suspicious-document{:05d}".format(part, 500 * (part-1) + x)

@@ -17,7 +17,7 @@ class FeaturesExtractor(object):
         features.SetReadabilityEase(206.835 - (1.015 * features.wordBySent) - (84.6 * features.syllablesPerWord))
         return features
     def GetWordsFrequency(self):
-        words=['the', 'a', 'and', 'or', 'am']
+        words=['the', 'a', 'and', 'or', 'am', 'of', 'is']
         frequency={}
         for word in words:
             frequency[word]=sum(1 for word in word_tokenize(self.text) if word.lower()==word)/len(self.text)
