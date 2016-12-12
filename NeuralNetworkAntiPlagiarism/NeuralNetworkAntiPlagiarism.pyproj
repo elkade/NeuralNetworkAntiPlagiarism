@@ -12,8 +12,10 @@
     <OutputPath>.</OutputPath>
     <Name>NeuralNetworkAntiPlagiarism</Name>
     <RootNamespace>NeuralNetworkAntiPlagiarism</RootNamespace>
-    <InterpreterId>{62560ef3-be8d-4ae2-994f-4cfcd8047739}</InterpreterId>
-    <InterpreterVersion>3.5</InterpreterVersion>
+    <InterpreterId>
+    </InterpreterId>
+    <InterpreterVersion>
+    </InterpreterVersion>
     <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -28,6 +30,7 @@
     <Compile Include="Atomizer.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DocumentReader.py" />
     <Compile Include="FeaturesExtractor.py">
       <SubType>Code</SubType>
     </Compile>
@@ -38,9 +41,6 @@
     <Compile Include="TextFeatures.py">
       <SubType>Code</SubType>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <InterpreterReference Include="{62560ef3-be8d-4ae2-994f-4cfcd8047739}\3.5" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
