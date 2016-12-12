@@ -10,7 +10,7 @@ class FeaturesExtractor(object):
         features.SetDots(sum(1 for l in self.text if l=='.')/len(self.text))
         features.SetCommas(sum(1 for l in self.text if l==',')/len(self.text))
         features.SetWordsFrequency(self.GetWordsFrequency())
-        features.SetWordBySent(wordCount/len(sent_tokenize(self.text)))
+        features.SetWordPerSent(wordCount/len(sent_tokenize(self.text)))
         features.SetLetterPerWord(len(self.text)/(wordCount))
         features.SetUpperLetter((sum(1 for l in self.text if l.isupper())-len(sent_tokenize(self.text)))/len(self.text))
         features.SetSyllablesPerWord(self.syllables()/wordCount)

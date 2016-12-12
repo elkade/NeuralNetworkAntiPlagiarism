@@ -13,6 +13,14 @@ class Atomizer(object):
         for node in nodes:
             self.metadata.append(node.attrib)
 
+    def atomize(self, type):
+        if type == 'parag':
+            return GetParagraphs()
+        if type == 'sent':
+            return GetSentences()
+        if type == 'plag':
+            return GetFullyPlagiarizedFragments()
+
     def GetParagraphs(self):
         paragraphs = self.text.split("\n\n")
         paragraphs = self.AddMetadata(paragraphs)
