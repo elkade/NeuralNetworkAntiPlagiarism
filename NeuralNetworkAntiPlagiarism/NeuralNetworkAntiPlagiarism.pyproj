@@ -5,17 +5,15 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>71c32fb6-41c3-4dd2-9b50-441259adeba3</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>NeuralNetworkAntiPlagiarism.py</StartupFile>
+    <StartupFile>start.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>NeuralNetworkAntiPlagiarism</Name>
     <RootNamespace>NeuralNetworkAntiPlagiarism</RootNamespace>
-    <InterpreterId>
-    </InterpreterId>
-    <InterpreterVersion>
-    </InterpreterVersion>
+    <InterpreterId>{62560ef3-be8d-4ae2-994f-4cfcd8047739}</InterpreterId>
+    <InterpreterVersion>3.5</InterpreterVersion>
     <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -34,13 +32,40 @@
     <Compile Include="FeaturesExtractor.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="InputDataProcessor.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InputDataReader.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mocks\AtomizerMock.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mocks\FeaturesExtractorMock.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mocks\NetworkMock.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="start.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="StylesComparer.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="NeuralNetworkAntiPlagiarism.py" />
+    <Compile Include="Tester.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="TextFeatures.py">
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{62560ef3-be8d-4ae2-994f-4cfcd8047739}\3.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Mocks\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

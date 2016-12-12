@@ -37,7 +37,7 @@ for part in range(startNum, endNum):
         vec = []
         for frag in frags:
             featuresExtractor = FeaturesExtractor(frag)
-            vec.append({'feats': featuresExtractor.GetFeatures(), 'ratio': frag['ratio']})
+            vec.append({'feats': featuresExtractor.GetFeatures().toFeatureList(), 'ratio': frag['ratio']})
             pass
         for val in prepareTraining(vec):
             (_X, _y) = val

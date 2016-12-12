@@ -2,62 +2,66 @@ from nltk.tokenize import sent_tokenize
 from xml.etree import ElementTree
 
 class Atomizer(object):
-    def __init__(self, filePath):
-        fp = open(filePath + ".txt", 'r', encoding='utf-8')
-        self.text = fp.read()
-        fp.close()
+    def __init__(self, type):
+        self.type = type
 
-        xmlRoot = ElementTree.parse(filePath + ".xml").getroot()
-        self.metadata = []
-        nodes = [child for child in xmlRoot if child.attrib['name'] == 'plagiarism']
-        for node in nodes:
-            self.metadata.append(node.attrib)
+    def atomize(self, file):
 
-    def GetParagraphs(self):
-        paragraphs = self.text.split("\n\n")
-        paragraphs = self.AddMetadata(paragraphs)
+        text = file['text']
+        metadata = file['metadata']
+
+        if self.type == 'parag':
+            return self.GetParagraphs(text, metadata)
+        if self.type == 'sent':
+            return self.GetSentences(text, metadata)
+        if self.type == 'plag':
+            return self.GetFullyPlagiarizedFragments(text, metadata)
+
+    def GetParagraphs(self, text, metadata):
+        paragraphs = text.split("\n\n")
+        paragraphs = self.AddMetadata(paragraphs, metadata)
         return paragraphs
 
-    def GetSentences(self):
-        sentences = sent_tokenize(self.text)
+    def GetSentences(self, text, metadata):
+        sentences = sent_tokenize(text)
         sentences = self.AddMetadata(sentences)
         return sentences
 
-    def GetFullyPlagiarizedFragments(self):
+    def GetFullyPlagiarizedFragments(self, text, metadata):
         
         lastOffset = 0
 
         fragments = []
 
-        if not self.metadata:
-            fragments.append(self.text)
+        if not metadata:
+            fragments.append(text)
         else:
-            for meta in self.metadata:
+            for meta in metadata:
             
                 currentOffset = int(meta['this_offset'])
                 currentFragLength = int(meta['this_length'])
 
                 if currentOffset != lastOffset:
-                    frag = self.text[lastOffset:currentOffset]
+                    frag = text[lastOffset:currentOffset]
                     fragments.append(frag)
                     pass
 
                 lastOffset = currentOffset + currentFragLength
-                frag = self.text[currentOffset:lastOffset]
+                frag = text[currentOffset:lastOffset]
 
                 fragments.append(frag)
                 pass
 
 
-        fragments = self.AddMetadata(fragments)
+        fragments = self.AddMetadata(fragments, text, metadata)
         return fragments
 
-    def AddMetadata(self, blocks):
+    def AddMetadata(self, blocks, text, metadata):
         for block in blocks:
-            ind = self.text.find(block)
+            ind = text.find(block)
             if ind == -1:
                 raise Exception('Nie znaleziono bloku w tekscie zrodlowym')
-            meta = [meta for meta in self.metadata if (int(meta['this_offset']) <= ind and int(meta['this_offset']) + int(meta['this_length']) >= ind) or (ind <= int(meta['this_offset']) and int(meta['this_offset']) <= ind + len(block)) ]
+            meta = [meta for meta in metadata if (int(meta['this_offset']) <= ind and int(meta['this_offset']) + int(meta['this_length']) >= ind) or (ind <= int(meta['this_offset']) and int(meta['this_offset']) <= ind + len(block)) ]
             if not meta:
                 yield {'text': block, 'ratio': 0, 'index': ind}
             else:
