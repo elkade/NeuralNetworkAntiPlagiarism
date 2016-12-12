@@ -1,6 +1,3 @@
-from Mocks.AtomizerMock import AtomizerMock
-from Mocks.FeaturesExtractorMock import FeaturesExtractorMock
-
 class InputDataProcessor(object):
     def __init__(self, atomizer, extractor, tresholds):
         self.atomizer = atomizer
@@ -8,10 +5,10 @@ class InputDataProcessor(object):
         self.tresholds = tresholds
         pass
 
-    def get_input(self, text):
+    def get_input(self, file):
         X = []
         y = []
-        fragments = self.atomizer.atomize(text)
+        fragments = list(self.atomizer.atomize(file))
 
         for fragment in fragments:
             features = self.extractor.getFeatures(fragment['text'])
@@ -36,10 +33,3 @@ class InputDataProcessor(object):
                     continue
         return X, y
     pass
-
-a = AtomizerMock()
-e = FeaturesExtractorMock()
-t = InputDataProcessor(a, e, (0.2, 0.8))
-
-inp = t.get_input('')
-print(inp)

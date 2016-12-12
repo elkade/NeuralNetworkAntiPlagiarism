@@ -9,8 +9,8 @@ class Tester(object):
         self.treshold = treshold
         pass
 
-    def is_plagiarised(self, text):
-        fragments = self.atomizer.atomize(text)
+    def is_plagiarised(self, file):
+        fragments = list(self.atomizer.atomize(file))
 
         for fragment in fragments:
             features = self.extractor.getFeatures(fragment['text'])
@@ -35,11 +35,3 @@ class Tester(object):
                 plags.append(fragments[i]['text'])
         return (b, plags)
     pass
-
-a = AtomizerMock()
-e = FeaturesExtractorMock()
-n = NetworkMock()
-t = Tester(a, e, n, 0.8)
-
-b = t.is_plagiarised('')
-print(b)

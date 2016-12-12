@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>71c32fb6-41c3-4dd2-9b50-441259adeba3</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>NeuralNetworkAntiPlagiarism.py</StartupFile>
+    <StartupFile>start.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -28,13 +28,13 @@
     <Compile Include="Atomizer.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Engine.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="FeaturesExtractor.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="InputDataProcessor.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InputDataReader.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Mocks\AtomizerMock.py">
@@ -44,6 +44,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Mocks\NetworkMock.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="start.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="StylesComparer.py">

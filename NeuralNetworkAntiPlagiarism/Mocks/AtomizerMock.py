@@ -1,6 +1,7 @@
 class AtomizerMock(object):
-
-    def atomize(self, text):
+    def __init__(self, type):
+        pass
+    def atomize(self, path):
         return [
             {'ratio': 0, 'text': 'abc', 'index': 12443},
             {'ratio': 0.25, 'text': 'def', 'index': 41243},
