@@ -1,12 +1,13 @@
-from TextFeatures import TextFeatures
-from nltk.tokenize import word_tokenize
+﻿from nltk.tokenize import word_tokenize
 from nltk.tokenize import sent_tokenize
+from TextFeatures import TextFeatures
 class FeaturesExtractor(object):
     def __init__(self, text):
         self.text=text['text']
     def GetFeatures(self):
         features=TextFeatures()
         wordCount=len(word_tokenize(self.text))
+        features.SetNormalizeCoef(len(self.text))
         features.SetDots(sum(1 for l in self.text if l=='.')/len(self.text))
         features.SetCommas(sum(1 for l in self.text if l==',')/len(self.text))
         features.SetWordsFrequency(self.GetWordsFrequency())
