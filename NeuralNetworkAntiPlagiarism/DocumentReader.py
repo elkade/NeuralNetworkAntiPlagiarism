@@ -1,4 +1,5 @@
-﻿class DocumentReader(threading.Thread):
+﻿import threading
+class DocumentReader(threading.Thread):
     def __init__(self, path):
         threading.Thread.__init__(self)
         self.path=path
