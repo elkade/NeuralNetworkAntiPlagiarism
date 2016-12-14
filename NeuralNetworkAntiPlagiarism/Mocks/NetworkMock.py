@@ -5,4 +5,4 @@ class NetworkMock(object):
        pass
 
    def predict(self, X):
-       return randint(0,1)
+       return [randint(0,1)]

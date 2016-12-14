@@ -24,4 +24,3 @@
         return 'dots ' + str(self.dots) + ' commas ' + str(self.commas) + ' wordBySent '\
             + str(self.wordBySent) + ' letterByWord ' + str(self.letterByWord) + ' upperLetters '\
             + str(self.upperLetters) + ' syllablesPerWord ' + str(self.syllablesPerWord) + ' RE ' + str(self.readabilityEase)
-	

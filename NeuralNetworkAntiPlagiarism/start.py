@@ -1,20 +1,22 @@
-from Mocks.FeaturesExtractorMock import FeaturesExtractorMock
-from Mocks.NetworkMock import NetworkMock
 from InputDataReader import InputDataReader
 from InputDataProcessor import InputDataProcessor
 from Tester import Tester
 from Atomizer import Atomizer
+from sklearn.neural_network.multilayer_perceptron import MLPClassifier
+from FeaturesExtractor import FeaturesExtractor
 from DocumentReader import DocumentReader
 
 a = Atomizer('plag')
-e = FeaturesExtractorMock()
+e = FeaturesExtractor()
 
 p = InputDataProcessor(a, e, (0.2, 0.8))
 r = InputDataReader(p)
 
-(X, y) = r.read(1, 1, 4)
+(X, y) = r.read(1, 1, 2)
 
-n = NetworkMock()
+#n = NetworkMock()
+n = MLPClassifier(solver='lbfgs', alpha=1e-5,  hidden_layer_sizes=(5,), random_state=1)
+
 n.fit(X, y)
 
 t = Tester(a, e, n, 0.8)

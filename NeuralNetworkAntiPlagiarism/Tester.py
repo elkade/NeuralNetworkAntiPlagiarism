@@ -1,6 +1,3 @@
-from Mocks.AtomizerMock import AtomizerMock
-from Mocks.FeaturesExtractorMock import FeaturesExtractorMock
-from Mocks.NetworkMock import NetworkMock
 class Tester(object):
     def __init__(self, atomizer, extractor, network, treshold):
         self.atomizer = atomizer
@@ -23,8 +20,8 @@ class Tester(object):
                 el1 = fragments[i]
                 el2 = fragments[j]
                 ans = self.network.predict(el1['feats'] + el2['feats'])
-                answers[i].append(ans)
-                answers[j].append(ans)
+                answers[i].append(ans[0])
+                answers[j].append(ans[0])
 
         b = False
         plags = []
