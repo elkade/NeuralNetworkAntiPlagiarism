@@ -17,8 +17,8 @@
         self.wordsFrequency = frequency
     def toFeatureList(self):
         featureList = [self.dots, self.commas, self.wordPerSent, self.letterPerWord, self.upperLetters, self.readabilityEase, self.syllablesPerWord]
-        for (word, count) in self.wordsFrequency:
-            featureList.add(count)
+        for (word) in self.wordsFrequency:
+            featureList.append(self.wordsFrequency[word])
         return featureList
     def __str__(self):
         return 'dots ' + str(self.dots) + ' commas ' + str(self.commas) + ' wordBySent '\
