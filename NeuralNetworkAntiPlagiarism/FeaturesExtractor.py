@@ -2,31 +2,30 @@
 from nltk.tokenize import sent_tokenize
 from TextFeatures import TextFeatures
 class FeaturesExtractor(object):
-    def __init__(self, text):
-        self.text=text['text']
-    def GetFeatures(self):
+
+    def getFeatures(self, text):
         features=TextFeatures()
-        wordCount=len(word_tokenize(self.text))
-        features.SetNormalizeCoef(len(self.text))
-        features.SetDots(sum(1 for l in self.text if l=='.')/len(self.text))
-        features.SetCommas(sum(1 for l in self.text if l==',')/len(self.text))
-        features.SetWordsFrequency(self.GetWordsFrequency())
-        features.SetWordPerSent(wordCount/len(sent_tokenize(self.text)))
-        features.SetLetterPerWord(len(self.text)/(wordCount))
-        features.SetUpperLetter((sum(1 for l in self.text if l.isupper())-len(sent_tokenize(self.text)))/len(self.text))
-        features.SetSyllablesPerWord(self.syllables()/wordCount)
-        features.SetReadabilityEase(206.835 - (1.015 * features.wordBySent) - (84.6 * features.syllablesPerWord))
-        return features
-    def GetWordsFrequency(self):
+        wordCount=len(word_tokenize(text))
+        #features.SetNormalizeCoef(len(text))
+        features.SetDots(sum(1 for l in text if l=='.')/len(text))
+        features.SetCommas(sum(1 for l in text if l==',')/len(text))
+        features.SetWordsFrequency(self.GetWordsFrequency(text))
+        features.SetWordPerSent(wordCount/len(sent_tokenize(text)))
+        features.SetLetterPerWord(len(text)/(wordCount))
+        features.SetUpperLetter((sum(1 for l in text if l.isupper())-len(sent_tokenize(text)))/len(text))
+        features.SetSyllablesPerWord(self.syllables(text)/wordCount)
+        features.SetReadabilityEase(206.835 - (1.015 * features.wordPerSent) - (84.6 * features.syllablesPerWord))
+        return features.toFeatureList()
+    def GetWordsFrequency(self, text):
         words=['the', 'a', 'and', 'or', 'am', 'of', 'is']
         frequency={}
         for word in words:
-            frequency[word]=sum(1 for word in word_tokenize(self.text) if word.lower()==word)/len(self.text)
+            frequency[word]=sum(1 for word in word_tokenize(text) if word.lower()==word)/len(text)
         return frequency
-    def syllables(self):
+    def syllables(self, text):
         count = 0
         vowels = 'aeiouy'
-        word = self.text.lower().strip(".:;?!")
+        word = text.lower().strip(".:;?!")
         if word[0] in vowels:
             count +=1
         for index in range(1,len(word)):
