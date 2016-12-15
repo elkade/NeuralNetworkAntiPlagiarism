@@ -1,7 +1,6 @@
 from xml.etree import ElementTree
 import pickle
 import threading
-from ReaderThread import ReaderThread
 
 class InputDataReader(object):
     def __init__(self, processor):
@@ -29,11 +28,10 @@ class InputDataReader(object):
         for ind in range(startInd, endInd):
             print('file index: ' + str(ind))
             path = "dataSets/part{}/suspicious-document{:05d}".format(partInd, 500 * (partInd - 1) + ind)
-            readerThread=ReaderThread()
             thread=threading.Thread(target=self.run, args=([path]))
             thread.start()
-            threads.append((thread, readerThread))
-        for (thread, reader) in threads:
+            threads.append(thread)
+        for thread in threads:
             thread.join()
             #X.extend(reader.X)
             #y.extend(reader.Y)

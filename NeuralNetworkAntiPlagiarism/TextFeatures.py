@@ -15,6 +15,8 @@
         self.syllablesPerWord = coef
     def SetWordsFrequency(self, frequency):
         self.wordsFrequency = frequency
+    def SetFOG(self, index):
+        self.FOG=index
     def toFeatureList(self):
         featureList = [self.dots, self.commas, self.wordPerSent, self.letterPerWord, self.upperLetters, self.readabilityEase, self.syllablesPerWord]
         for (word) in self.wordsFrequency:
@@ -23,4 +25,5 @@
     def __str__(self):
         return 'dots ' + str(self.dots) + ' commas ' + str(self.commas) + ' wordBySent '\
             + str(self.wordBySent) + ' letterByWord ' + str(self.letterByWord) + ' upperLetters '\
-            + str(self.upperLetters) + ' syllablesPerWord ' + str(self.syllablesPerWord) + ' RE ' + str(self.readabilityEase)
+            + str(self.upperLetters) + ' syllablesPerWord ' + str(self.syllablesPerWord) + ' RE ' + str(self.readabilityEase)\
+            + ' FOG '+str(self.FOG)
