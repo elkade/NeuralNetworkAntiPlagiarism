@@ -1,28 +1,13 @@
 from xml.etree import ElementTree
 import pickle
+import threading
+from ReaderThread import ReaderThread
 
 class InputDataReader(object):
     def __init__(self, processor):
         self.processor = processor
-
-    def read(self, partInd, startInd, endInd, serialize = True):
-        X = []
-        y = []
-        for ind in range(startInd, endInd):
-            print('file index: ' + str(ind))
-            path = "dataSets/part{}/suspicious-document{:05d}".format(partInd, 500 * (partInd - 1) + ind)
-            file = self.get_file(path)
-            (_X, _y) = self.processor.get_input(file)
-            X.extend(_X)
-            y.extend(_y)
-            pass
-        if serialize:
-            with open('features/part{}'.format(partInd), 'wb+') as handle:
-                pickle.dump({'X':X,'y':y}, handle)
-
-        return (X, y)
-
-    def get_file(self, path):
+    def run(self, path):
+        print("start: "+path)
         fp = open(path + ".txt", 'r', encoding='utf-8')
         text = fp.read()
         fp.close()
@@ -33,4 +18,31 @@ class InputDataReader(object):
         for node in nodes:
             metadata.append(node.attrib)
 
-        return {'text':text, 'metadata': metadata}
+        (x, y) = self.processor.get_input({'text':text, 'metadata': metadata})
+        self.X.extend(x)
+        self.Y.extend(y)
+        print("end: "+path)
+    def read(self, partInd, startInd, endInd, serialize = True):
+        self.X = []
+        self.Y = []
+        threads=[]
+        for ind in range(startInd, endInd):
+            print('file index: ' + str(ind))
+            path = "dataSets/part{}/suspicious-document{:05d}".format(partInd, 500 * (partInd - 1) + ind)
+            readerThread=ReaderThread()
+            thread=threading.Thread(target=self.run, args=([path]))
+            thread.start()
+            threads.append((thread, readerThread))
+        for (thread, reader) in threads:
+            thread.join()
+            #X.extend(reader.X)
+            #y.extend(reader.Y)
+            pass
+        if serialize:
+            with open('features/part{}'.format(partInd), 'wb+') as handle:
+                pickle.dump({'X':self.X,'y':self.Y}, handle)
+
+        return (self.X, self.Y)
+
+
+
