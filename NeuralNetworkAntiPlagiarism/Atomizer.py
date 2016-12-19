@@ -6,25 +6,34 @@ class Atomizer(object):
         self.type = type
 
     def atomize(self, file):
-
         text = file['text']
         metadata = file['metadata']
 
-        if self.type == 'parag':
-            return self.GetParagraphs(text, metadata)
-        if self.type == 'sent':
-            return self.GetSentences(text, metadata)
-        if self.type == 'plag':
-            return self.GetFullyPlagiarizedFragments(text, metadata)
+        if self.type == 'learn':
 
+            fragments = []
+            plag_frags = self.GetFullyPlagiarizedFragments(text, metadata)
+            for frag in plag_frags:
+                paragraphs = self._GetParagraphs(frag)
+                for parag in paragraphs:
+                    if len(parag) > 100:
+                        fragments.append(parag)
+            fragments = self.AddMetadata(fragments, text, metadata)
+            return fragments
+        if self.type == 'test':
+            return self.GetParagraphs(text, metadata)
+
+    def _GetParagraphs(self, text):
+        paragraphs = text.split("\n\n")
+        return paragraphs
     def GetParagraphs(self, text, metadata):
         paragraphs = text.split("\n\n")
-        paragraphs = self.AddMetadata(paragraphs, metadata)
+        paragraphs = [p for p in paragraphs if len(p)>100]
+        paragraphs = self.AddMetadata(paragraphs, text, metadata)
         return paragraphs
-
     def GetSentences(self, text, metadata):
         sentences = sent_tokenize(text)
-        sentences = self.AddMetadata(sentences)
+        sentences = self.AddMetadata(sentences, text, metadata)
         return sentences
 
     def GetFullyPlagiarizedFragments(self, text, metadata):
@@ -53,7 +62,7 @@ class Atomizer(object):
                 pass
 
 
-        fragments = self.AddMetadata(fragments, text, metadata)
+        
         return fragments
 
     def AddMetadata(self, blocks, text, metadata):
