@@ -5,6 +5,7 @@ import threading
 class InputDataReader(object):
     def __init__(self, processor):
         self.processor = processor
+        self.lock = threading.Lock()
     def run(self, path):
         print("start: "+path)
         fp = open(path + ".txt", 'r', encoding='utf-8')
@@ -18,8 +19,10 @@ class InputDataReader(object):
             metadata.append(node.attrib)
 
         (x, y) = self.processor.get_input({'text':text, 'metadata': metadata})
+        self.lock.acquire()
         self.X.extend(x)
         self.Y.extend(y)
+        self.lock.release()
         print("end: "+path)
     def read(self, partInd, startInd, endInd, serialize = True):
         self.X = []
@@ -41,6 +44,27 @@ class InputDataReader(object):
                 pickle.dump({'X':self.X,'y':self.Y}, handle)
 
         return (self.X, self.Y)
+    def read_features(self, partInd):
+        X, y = [], []
+        try:
+            with open('features/part{}'.format(partInd), 'rb') as handle:
+                storedFeatures = pickle.load(handle)
+            X.extend(storedFeatures['X'])
+            y.extend(storedFeatures['y'])
+        except:
+            print('błąd odczytu pliku features/part{}'.format(part))
 
+        return X, y
 
+    def get_file(self, path):
+        fp = open(path + ".txt", 'r', encoding='utf-8')
+        text = fp.read()
+        fp.close()
 
+        xmlRoot = ElementTree.parse(path + ".xml").getroot()
+        metadata = []
+        nodes = [child for child in xmlRoot if child.attrib['name'] == 'plagiarism']
+        for node in nodes:
+            metadata.append(node.attrib)
+
+        return {'text':text, 'metadata': metadata}
