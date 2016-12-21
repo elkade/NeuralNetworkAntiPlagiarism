@@ -12,8 +12,10 @@
     <OutputPath>.</OutputPath>
     <Name>NeuralNetworkAntiPlagiarism</Name>
     <RootNamespace>NeuralNetworkAntiPlagiarism</RootNamespace>
-    <InterpreterId></InterpreterId>
-    <InterpreterVersion></InterpreterVersion>
+    <InterpreterId>
+    </InterpreterId>
+    <InterpreterVersion>
+    </InterpreterVersion>
     <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">

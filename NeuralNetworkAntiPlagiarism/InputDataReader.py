@@ -37,7 +37,7 @@ class InputDataReader(object):
             #y.extend(reader.Y)
             pass
         if serialize:
-            with open('features/part{}'.format(partInd), 'wb+') as handle:
+            with open('features/part{}_{}_{}'.format(partInd, startInd, endInd), 'wb+') as handle:
                 pickle.dump({'X':self.X,'y':self.Y}, handle)
 
         return (self.X, self.Y)
