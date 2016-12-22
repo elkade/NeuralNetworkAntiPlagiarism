@@ -17,6 +17,8 @@
         self.wordsFrequency = frequency
     def SetFOG(self, index):
         self.FOG=index
+    def SetTextLength(self, length):
+        self.length=length
     def toFeatureList(self):
         featureList = [self.dots, self.commas, self.wordPerSent, self.letterPerWord, self.upperLetters, self.readabilityEase, self.syllablesPerWord]
         for (word) in self.wordsFrequency:

@@ -7,6 +7,7 @@ class FeaturesExtractor(object):
         features=TextFeatures()
         wordCount=len(word_tokenize(text))
         sentCount=len(sent_tokenize(text))
+        features.SetTextLength(len(text))
         features.SetDots(sum(1 for l in text if l=='.')/len(text))
         features.SetCommas(sum(1 for l in text if l==',')/len(text))
         features.SetWordsFrequency(self.GetWordsFrequency(text))
