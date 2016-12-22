@@ -8,12 +8,15 @@ class Tester(object):
 
     def is_plagiarised(self, file):
         fragments = list(self.atomizer.atomize(file))
+        
+        n = len(fragments)
+        if n>100:
+            return False
 
         for fragment in fragments:
             features = self.extractor.getFeatures(fragment['text'])
             fragment['feats'] = features
 
-        n = len(fragments)
         answers = [[] for i in range(n)]
         for i in range(n):
             for j in range(i,n):
@@ -22,7 +25,6 @@ class Tester(object):
                 ans = self.network.predict([el1['feats'] + el2['feats']])
                 answers[i].append(ans[0])
                 answers[j].append(ans[0])
-
         b = False
         plags = []
         for i in range(n):

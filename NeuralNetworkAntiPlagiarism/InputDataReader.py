@@ -40,19 +40,19 @@ class InputDataReader(object):
             #y.extend(reader.Y)
             pass
         if serialize:
-            with open('features/part{}'.format(partInd), 'wb+') as handle:
+            with open('features/part{}_{}_{}'.format(partInd, startInd, endInd), 'wb+') as handle:
                 pickle.dump({'X':self.X,'y':self.Y}, handle)
 
         return (self.X, self.Y)
-    def read_features(self, partInd):
+    def read_features(self, filename):
         X, y = [], []
         try:
-            with open('features/part{}'.format(partInd), 'rb') as handle:
+            with open('features/{}'.format(filename), 'rb') as handle:
                 storedFeatures = pickle.load(handle)
             X.extend(storedFeatures['X'])
             y.extend(storedFeatures['y'])
         except:
-            print('błąd odczytu pliku features/part{}'.format(part))
+            print('błąd odczytu pliku features/{}'.format(filename))
 
         return X, y
 
