@@ -19,7 +19,7 @@ class Tester(object):
             for j in range(i,n):
                 el1 = fragments[i]
                 el2 = fragments[j]
-                ans = self.network.predict(el1['feats'] + el2['feats'])
+                ans = self.network.predict([el1['feats'] + el2['feats']])
                 answers[i].append(ans[0])
                 answers[j].append(ans[0])
 
