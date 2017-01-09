@@ -18,14 +18,14 @@ class TestGenerator(object):
         (X, y) = r.read_features(trainingFilename)
 
         
-        n = MLPClassifier(solver='sgd', alpha=1e-5,  hidden_layer_sizes=(20,), random_state=1, verbose=True)
+        n = MLPClassifier(solver='lbfgs', alpha=1e-5,  hidden_layer_sizes=(5,), random_state=1)
 
         n.fit(X, y)
 
         a = Atomizer('test')
         e = FeaturesExtractor()
         
-        t = Tester(a, e, n, 0.9)
+        t = Tester(a, e, n, 0.99)
         
         for i in range(startIndex, endIndex):
             testFilename="suspicious-document{:05d}".format(i)

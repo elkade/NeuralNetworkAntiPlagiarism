@@ -1,4 +1,4 @@
 from TestGenerator import TestGenerator
 
 tg=TestGenerator()
-tg.runTest("part1", 11, 30)
+tg.runTest("part1_61_100", 101, 200)
