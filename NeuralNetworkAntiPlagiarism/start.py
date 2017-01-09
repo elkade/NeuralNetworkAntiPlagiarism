@@ -12,8 +12,8 @@ e = FeaturesExtractor()
 p = InputDataProcessor(a, e, (0.2, 0.8))
 r = InputDataReader(p)
 
-(X, y) = r.read(1, 322, 322)
-#(X, y) = r.read_features(1)
+#(X, y) = r.read(1, 322, 322)
+(X, y) = r.read_features('part1')
 #n = NetworkMock()
 n = MLPClassifier(solver='lbfgs', alpha=1e-5,  hidden_layer_sizes=(5,), random_state=1)
 

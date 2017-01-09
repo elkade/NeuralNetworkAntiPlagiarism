@@ -10,8 +10,8 @@ class Tester(object):
         fragments = list(self.atomizer.atomize(file))
         
         n = len(fragments)
-        if n>100:
-            return False
+        #if n>100:
+        #    return False
 
         for fragment in fragments:
             features = self.extractor.getFeatures(fragment['text'])

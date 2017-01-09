@@ -5,17 +5,15 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>71c32fb6-41c3-4dd2-9b50-441259adeba3</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>startTest.py</StartupFile>
+    <StartupFile>start.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>NeuralNetworkAntiPlagiarism</Name>
     <RootNamespace>NeuralNetworkAntiPlagiarism</RootNamespace>
-    <InterpreterId>
-    </InterpreterId>
-    <InterpreterVersion>
-    </InterpreterVersion>
+    <InterpreterId>{62560ef3-be8d-4ae2-994f-4cfcd8047739}</InterpreterId>
+    <InterpreterVersion>3.5</InterpreterVersion>
     <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
