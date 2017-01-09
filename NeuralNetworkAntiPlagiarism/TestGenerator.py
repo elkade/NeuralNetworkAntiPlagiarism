@@ -25,7 +25,7 @@ class TestGenerator(object):
         a = Atomizer('test')
         e = FeaturesExtractor()
         
-        t = Tester(a, e, n, 0.8)
+        t = Tester(a, e, n, 0.99)
         
         for i in range(startIndex, endIndex):
             testFilename="suspicious-document{:05d}".format(i)
