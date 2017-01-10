@@ -6,27 +6,28 @@ from sklearn.neural_network.multilayer_perceptron import MLPClassifier
 from FeaturesExtractor import FeaturesExtractor
 from DocumentReader import DocumentReader
 
-a = Atomizer('test')
+a = Atomizer('learn')
 e = FeaturesExtractor()
 
 p = InputDataProcessor(a, e, (0.2, 0.8))
 r = InputDataReader(p)
 
-#(X, y) = r.read(1, 1, 2)
+start, end = 1, 30
 
-(X, y) = r.read_features('part1_1_2.csv')
-#n = NetworkMock()
-#n = MLPClassifier(solver='lbfgs', alpha=1e-5,  hidden_layer_sizes=(5,), random_state=1)
+r.read(1, start, end)
 
-#n.fit(X, y)
+(X, y) = r.read_features('part1_{}_{}.csv'.format(start, end))
+n = MLPClassifier(solver='sgd', alpha=1e-5,  hidden_layer_sizes=(10,10), learning_rate='adaptive', verbose=True)
 
-#a = Atomizer('test')
-#e = FeaturesExtractor()
+n.fit(X, y)
 
-#t = Tester(a, e, n, 0.8)
+a = Atomizer('test')
+e = FeaturesExtractor()
+
+t = Tester(a, e, n, 0.8)
  
-#test_file = r.get_file("dataSets/part{}/suspicious-document{:05d}".format(8, 500 * (8 - 1) + 1))
-#b = t.is_plagiarised(test_file)
-#print('odpowiedz systemu: ' + str(b[0]))
+test_file = r.get_file("dataSets/part{}/suspicious-document{:05d}".format(8, 500 * (8 - 1) + 1))
+b = t.is_plagiarised(test_file)
+print('odpowiedz systemu: ' + str(b[0]))
 
-#print('stan rzeczywisty: ' + str(not not test_file['metadata']))
+print('stan rzeczywisty: ' + str(not not test_file['metadata']))

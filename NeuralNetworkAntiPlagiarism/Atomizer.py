@@ -1,6 +1,6 @@
 from nltk.tokenize import sent_tokenize
 from xml.etree import ElementTree
-
+import random
 class Atomizer(object):
     def __init__(self, type):
         self.type = type
@@ -16,10 +16,11 @@ class Atomizer(object):
             for frag in plag_frags:
                 paragraphs = self._GetParagraphs(frag)
                 for parag in paragraphs:
-                    if len(parag) > 100:
+                    if len(parag) > 200:
                         fragments.append(parag)
-            fragments = self.AddMetadata(fragments, text, metadata)
-            return fragments
+            fragments = list(self.AddMetadata(fragments, text, metadata))
+            n = len(fragments)
+            return [f for f in fragments if f['ratio'] > 0.5 or random.uniform(1, n) < 50]
         if self.type == 'test':
             return self.GetParagraphs(text, metadata)
 

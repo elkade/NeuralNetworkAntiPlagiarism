@@ -28,7 +28,6 @@ class InputDataReader(object):
             if serialize:
                 with open(output_path, 'a', newline='') as csvfile:
                     writer = csv.DictWriter(csvfile, delimiter=';', quoting=csv.QUOTE_NONE, fieldnames=['x', 'y'])
-                    writer.writeheader()
                     for i in range(0,len(X)):
                         writer.writerow({'x':X[i], 'y':Y[i]})
             self.lock.release()
@@ -40,6 +39,9 @@ class InputDataReader(object):
         self.Y = []
         threads=[]
         output_path = 'features/part{}_{}_{}.csv'.format(partInd, startInd, endInd)
+        with open(output_path, 'a', newline='') as csvfile:
+            writer = csv.DictWriter(csvfile, delimiter=';', quoting=csv.QUOTE_NONE, fieldnames=['x', 'y'])
+            writer.writeheader()
         for ind in range(startInd, endInd):
             print('file index: ' + str(ind))
             path = "dataSets/part{}/suspicious-document{:05d}".format(partInd, 500 * (partInd - 1) + ind)
