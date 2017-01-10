@@ -5,6 +5,11 @@ from Atomizer import Atomizer
 from sklearn.neural_network.multilayer_perceptron import MLPClassifier
 from FeaturesExtractor import FeaturesExtractor
 from DocumentReader import DocumentReader
+import pickle
+
+def save(network):
+    with open('network.bin', 'wb+') as handle:
+        pickle.dump(network, handle)
 
 a = Atomizer('learn')
 e = FeaturesExtractor()
@@ -14,13 +19,13 @@ r = InputDataReader(p)
 
 start, end = 1, 30
 
-r.read(1, start, end)
+#r.read(1, start, end)
 
 (X, y) = r.read_features('part1_{}_{}.csv'.format(start, end))
-n = MLPClassifier(solver='sgd', alpha=1e-5,  hidden_layer_sizes=(10,10), learning_rate='adaptive', verbose=True)
-
+n = MLPClassifier(solver='adam', hidden_layer_sizes=(200, 200),  verbose=True, activation='tanh', tol = 0.0)
+#n = pickle.load( open( "network.bin", "rb" ) )
 n.fit(X, y)
-
+save(n)
 a = Atomizer('test')
 e = FeaturesExtractor()
 
