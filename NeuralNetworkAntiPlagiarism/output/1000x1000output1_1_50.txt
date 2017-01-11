@@ -1,0 +1,67 @@
+Time elapsed on feature extraction: 0.0
+Time elapsed on reading serialized features: 6.818488121032715
+MLPClassifier(activation='tanh', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(1000, 1000), learning_rate='constant',
+       learning_rate_init=0.001, max_iter=200, momentum=0.9,
+       nesterovs_momentum=True, power_t=0.5, random_state=None,
+       shuffle=True, solver='adam', tol=0.0, validation_fraction=0.1,
+       verbose=True, warm_start=False)
+Iteration 1, loss = 0.64889841
+Iteration 2, loss = 0.63526581
+Iteration 3, loss = 0.63301230
+Iteration 4, loss = 0.63167984
+Iteration 5, loss = 0.63040174
+Iteration 6, loss = 0.62895897
+Iteration 7, loss = 0.62905334
+Iteration 8, loss = 0.62783053
+Iteration 9, loss = 0.62754627
+Iteration 10, loss = 0.62635536
+Iteration 11, loss = 0.62595292
+Iteration 12, loss = 0.62503312
+Iteration 13, loss = 0.62367449
+Iteration 14, loss = 0.62326301
+Iteration 15, loss = 0.62234126
+Iteration 16, loss = 0.62145216
+Iteration 17, loss = 0.62078996
+Iteration 18, loss = 0.61962534
+Iteration 19, loss = 0.61982115
+Iteration 20, loss = 0.61877352
+Iteration 21, loss = 0.61809916
+Iteration 22, loss = 0.61817507
+Iteration 23, loss = 0.61662821
+Iteration 24, loss = 0.61625373
+Iteration 25, loss = 0.61586207
+Iteration 26, loss = 0.61494487
+Iteration 27, loss = 0.61457409
+Iteration 28, loss = 0.61407768
+Iteration 29, loss = 0.61350686
+Iteration 30, loss = 0.61347261
+Iteration 31, loss = 0.61266295
+Iteration 32, loss = 0.61197765
+Iteration 33, loss = 0.61119013
+Iteration 34, loss = 0.61133287
+Iteration 35, loss = 0.61098965
+Iteration 36, loss = 0.61117957
+Iteration 37, loss = 0.61015833
+Iteration 38, loss = 0.60971872
+Iteration 39, loss = 0.60939852
+Iteration 40, loss = 0.60874990
+Iteration 41, loss = 0.60870272
+Iteration 42, loss = 0.60873908
+Iteration 43, loss = 0.60800276
+Iteration 44, loss = 0.60788046
+Iteration 45, loss = 0.60761033
+Iteration 46, loss = 0.60702028
+Iteration 47, loss = 0.60762019
+Iteration 48, loss = 0.60687579
+Iteration 49, loss = 0.60753739
+Iteration 50, loss = 0.60651166
+Iteration 51, loss = 0.60570108
+Iteration 52, loss = 0.60572152
+Iteration 53, loss = 0.60472795
+Iteration 54, loss = 0.60570450
+Iteration 55, loss = 0.60499639
+Iteration 56, loss = 0.60520611
+Training loss did not improve more than tol=0.000000 for two consecutive epochs. Stopping.
+Time elapsed on network learning: 17.477870225906372

@@ -1,0 +1,233 @@
+file index: 1
+start: dataSets/part3/suspicious-document01001
+file index: 2
+start: dataSets/part3/suspicious-document01002
+file index: 3
+start: dataSets/part3/suspicious-document01003
+file index: 4
+start: dataSets/part3/suspicious-document01004
+file index: 5
+start: dataSets/part3/suspicious-document01005
+file index: 6
+start: dataSets/part3/suspicious-document01006
+end: dataSets/part3/suspicious-document01002
+file index: 7
+start: dataSets/part3/suspicious-document01007
+file index: 8
+start: dataSets/part3/suspicious-document01008
+file index: 9
+end: dataSets/part3/suspicious-document01001
+start: dataSets/part3/suspicious-document01009
+file index: 10
+end: dataSets/part3/suspicious-document01006
+start: dataSets/part3/suspicious-document01010
+end: dataSets/part3/suspicious-document01008
+file index: 11
+start: dataSets/part3/suspicious-document01011
+file index: 12
+start: dataSets/part3/suspicious-document01012
+file index: 13
+start: dataSets/part3/suspicious-document01013
+file index: 14
+start: dataSets/part3/suspicious-document01014
+file index: 15
+start: dataSets/part3/suspicious-document01015
+file index: 16
+end: dataSets/part3/suspicious-document01005
+start: dataSets/part3/suspicious-document01016
+file index: 17
+start: dataSets/part3/suspicious-document01017
+file index: 18
+start: dataSets/part3/suspicious-document01018
+file index: 19
+start: dataSets/part3/suspicious-document01019
+file index: 20
+start: dataSets/part3/suspicious-document01020
+file index: 21
+start: dataSets/part3/suspicious-document01021
+file index: 22
+start: dataSets/part3/suspicious-document01022
+file index: 23
+start: dataSets/part3/suspicious-document01023
+file index: 24
+start: dataSets/part3/suspicious-document01024
+file index: 25
+start: dataSets/part3/suspicious-document01025
+file index: 26
+start: dataSets/part3/suspicious-document01026
+file index: 27
+start: dataSets/part3/suspicious-document01027
+file index: 28
+start: dataSets/part3/suspicious-document01028
+file index: 29
+start: dataSets/part3/suspicious-document01029
+file index: 30
+start: dataSets/part3/suspicious-document01030
+file index: 31
+start: dataSets/part3/suspicious-document01031
+file index: 32
+start: dataSets/part3/suspicious-document01032
+file index: 33
+start: dataSets/part3/suspicious-document01033
+file index: 34
+start: dataSets/part3/suspicious-document01034
+file index: 35
+end: dataSets/part3/suspicious-document01004
+end: dataSets/part3/suspicious-document01010
+start: dataSets/part3/suspicious-document01035
+file index: 36
+start: dataSets/part3/suspicious-document01036
+file index: 37
+start: dataSets/part3/suspicious-document01037
+file index: 38
+start: dataSets/part3/suspicious-document01038
+file index: 39
+end: dataSets/part3/suspicious-document01007
+start: dataSets/part3/suspicious-document01039
+end: dataSets/part3/suspicious-document01015
+file index: 40
+end: dataSets/part3/suspicious-document01013
+start: dataSets/part3/suspicious-document01040
+file index: 41
+start: dataSets/part3/suspicious-document01041
+end: dataSets/part3/suspicious-document01014
+file index: 42
+start: dataSets/part3/suspicious-document01042
+file index: 43
+start: dataSets/part3/suspicious-document01043
+file index: 44
+start: dataSets/part3/suspicious-document01044
+file index: 45
+start: dataSets/part3/suspicious-document01045
+file index: 46
+start: dataSets/part3/suspicious-document01046
+file index: 47
+start: dataSets/part3/suspicious-document01047
+file index: 48
+start: dataSets/part3/suspicious-document01048
+file index: 49
+start: dataSets/part3/suspicious-document01049
+end: dataSets/part3/suspicious-document01012
+end: dataSets/part3/suspicious-document01020
+end: dataSets/part3/suspicious-document01011
+end: dataSets/part3/suspicious-document01016
+end: dataSets/part3/suspicious-document01018
+end: dataSets/part3/suspicious-document01024
+end: dataSets/part3/suspicious-document01021
+end: dataSets/part3/suspicious-document01017
+end: dataSets/part3/suspicious-document01009
+end: dataSets/part3/suspicious-document01022
+end: dataSets/part3/suspicious-document01023
+end: dataSets/part3/suspicious-document01025
+end: dataSets/part3/suspicious-document01026
+end: dataSets/part3/suspicious-document01028
+end: dataSets/part3/suspicious-document01027
+end: dataSets/part3/suspicious-document01030
+end: dataSets/part3/suspicious-document01032
+end: dataSets/part3/suspicious-document01003
+end: dataSets/part3/suspicious-document01029
+end: dataSets/part3/suspicious-document01019
+end: dataSets/part3/suspicious-document01034
+end: dataSets/part3/suspicious-document01033
+end: dataSets/part3/suspicious-document01031
+end: dataSets/part3/suspicious-document01036
+end: dataSets/part3/suspicious-document01038
+end: dataSets/part3/suspicious-document01040
+end: dataSets/part3/suspicious-document01041
+end: dataSets/part3/suspicious-document01037
+end: dataSets/part3/suspicious-document01043
+end: dataSets/part3/suspicious-document01042
+end: dataSets/part3/suspicious-document01039
+end: dataSets/part3/suspicious-document01047
+end: dataSets/part3/suspicious-document01045
+end: dataSets/part3/suspicious-document01035
+end: dataSets/part3/suspicious-document01048
+end: dataSets/part3/suspicious-document01049
+end: dataSets/part3/suspicious-document01044
+end: dataSets/part3/suspicious-document01046
+Time elapsed on feature extraction: 22.557799816131592
+Time elapsed on reading serialized features: 6.094737768173218
+MLPClassifier(activation='tanh', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(300, 300), learning_rate='constant',
+       learning_rate_init=0.001, max_iter=200, momentum=0.9,
+       nesterovs_momentum=True, power_t=0.5, random_state=None,
+       shuffle=True, solver='adam', tol=0.0, validation_fraction=0.1,
+       verbose=True, warm_start=False)
+Iteration 1, loss = 0.66890705
+Iteration 2, loss = 0.65693624
+Iteration 3, loss = 0.65436776
+Iteration 4, loss = 0.65257011
+Iteration 5, loss = 0.65087727
+Iteration 6, loss = 0.64765922
+Iteration 7, loss = 0.64471777
+Iteration 8, loss = 0.64401376
+Iteration 9, loss = 0.64314991
+Iteration 10, loss = 0.64309057
+Iteration 11, loss = 0.64241920
+Iteration 12, loss = 0.64148532
+Iteration 13, loss = 0.64124407
+Iteration 14, loss = 0.64055235
+Iteration 15, loss = 0.63984309
+Iteration 16, loss = 0.63941655
+Iteration 17, loss = 0.63923461
+Iteration 18, loss = 0.63852175
+Iteration 19, loss = 0.63777075
+Iteration 20, loss = 0.63790885
+Iteration 21, loss = 0.63709457
+Iteration 22, loss = 0.63688238
+Iteration 23, loss = 0.63637301
+Iteration 24, loss = 0.63608414
+Iteration 25, loss = 0.63570025
+Iteration 26, loss = 0.63497296
+Iteration 27, loss = 0.63516190
+Iteration 28, loss = 0.63490138
+Iteration 29, loss = 0.63457394
+Iteration 30, loss = 0.63424102
+Iteration 31, loss = 0.63500366
+Iteration 32, loss = 0.63339570
+Iteration 33, loss = 0.63346406
+Iteration 34, loss = 0.63298273
+Iteration 35, loss = 0.63303914
+Iteration 36, loss = 0.63278277
+Iteration 37, loss = 0.63283659
+Iteration 38, loss = 0.63185457
+Iteration 39, loss = 0.63133394
+Iteration 40, loss = 0.63147365
+Iteration 41, loss = 0.63120381
+Iteration 42, loss = 0.63089829
+Iteration 43, loss = 0.63051670
+Iteration 44, loss = 0.63059932
+Iteration 45, loss = 0.63036674
+Iteration 46, loss = 0.62981743
+Iteration 47, loss = 0.62939218
+Iteration 48, loss = 0.62915624
+Iteration 49, loss = 0.62896199
+Iteration 50, loss = 0.62916350
+Iteration 51, loss = 0.62736184
+Iteration 52, loss = 0.62705914
+Iteration 53, loss = 0.62658501
+Iteration 54, loss = 0.62669473
+Iteration 55, loss = 0.62641242
+Iteration 56, loss = 0.62676526
+Iteration 57, loss = 0.62552335
+Iteration 58, loss = 0.62462193
+Iteration 59, loss = 0.62458417
+Iteration 60, loss = 0.62403202
+Iteration 61, loss = 0.62298237
+Iteration 62, loss = 0.62243114
+Iteration 63, loss = 0.62238471
+Iteration 64, loss = 0.62178653
+Iteration 65, loss = 0.62220521
+Iteration 66, loss = 0.62110123
+Iteration 67, loss = 0.62018737
+Iteration 68, loss = 0.61989710
+Iteration 69, loss = 0.62020074
+Iteration 70, loss = 0.61970443
+Iteration 71, loss = 0.61930095
+Iteration 72, loss = 0.61849915
+Iteration 73, loss = 0.61948866
+Iteration 74, loss = 0.61892735
+Iteration 75, loss = 0.61897186
+Training loss did not improve more than tol=0.000000 for two consecutive epochs. Stopping.
+Time elapsed on network learning: 19.98467516899109

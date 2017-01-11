@@ -11,9 +11,9 @@ import sys
 import winsound
 try:
 
-    part, start, end, hidden = 3, 1, 50, 300
+    part, start, end, hidden, solver = 7, 1, 500, 200, 'sgd'
     #
-    sys.stdout = open('output/{}x{}output{}_{}_{}.txt'.format(hidden, hidden, part, start, end), 'w+', 1)
+    sys.stdout = open('output/{}_{}x{}output{}_{}_{}.txt'.format(solver, hidden, hidden, part, start, end), 'w+', 1)
     #
 
     start_time = time.time()
@@ -38,7 +38,7 @@ try:
     print_time_interval("feature extraction")
     (X, y) = r.read_features('part{}_{}_{}.csv'.format(part, start, end))
     print_time_interval("reading serialized features")
-    n = MLPClassifier(solver='adam', hidden_layer_sizes=(hidden, hidden),  verbose=True, activation='tanh', tol = 0.0)
+    n = MLPClassifier(solver=solver, hidden_layer_sizes=(hidden, hidden),  verbose=True, activation='tanh', tol = 0.0)
     print(n)
     n = pickle.load( open( "network.bin", "rb" ) )
     n.fit(X, y)

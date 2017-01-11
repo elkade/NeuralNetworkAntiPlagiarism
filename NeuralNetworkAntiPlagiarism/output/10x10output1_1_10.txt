@@ -1,0 +1,99 @@
+file index: 1
+start: dataSets/part1/suspicious-document00001
+file index: 2
+start: dataSets/part1/suspicious-document00002
+file index: 3
+start: dataSets/part1/suspicious-document00003
+file index: 4
+start: dataSets/part1/suspicious-document00004
+file index: 5
+start: dataSets/part1/suspicious-document00005
+file index: 6
+start: dataSets/part1/suspicious-document00006
+file index: 7
+start: dataSets/part1/suspicious-document00007
+file index: 8
+start: dataSets/part1/suspicious-document00008
+file index: 9
+start: dataSets/part1/suspicious-document00009
+end: dataSets/part1/suspicious-document00007
+end: dataSets/part1/suspicious-document00009
+end: dataSets/part1/suspicious-document00004
+end: dataSets/part1/suspicious-document00001
+end: dataSets/part1/suspicious-document00005
+end: dataSets/part1/suspicious-document00006
+end: dataSets/part1/suspicious-document00003
+end: dataSets/part1/suspicious-document00002
+end: dataSets/part1/suspicious-document00008
+Time elapsed on feature extraction: 5.497941970825195
+Time elapsed on reading serialized features: 1.6034672260284424
+MLPClassifier(activation='tanh', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(10, 10), learning_rate='constant',
+       learning_rate_init=0.001, max_iter=200, momentum=0.9,
+       nesterovs_momentum=True, power_t=0.5, random_state=None,
+       shuffle=True, solver='adam', tol=0.0, validation_fraction=0.1,
+       verbose=True, warm_start=False)
+Iteration 1, loss = 0.61789179
+Iteration 2, loss = 0.58613880
+Iteration 3, loss = 0.57274119
+Iteration 4, loss = 0.56693774
+Iteration 5, loss = 0.56520172
+Iteration 6, loss = 0.56248469
+Iteration 7, loss = 0.55704033
+Iteration 8, loss = 0.55556319
+Iteration 9, loss = 0.55285754
+Iteration 10, loss = 0.55109946
+Iteration 11, loss = 0.54781835
+Iteration 12, loss = 0.54695496
+Iteration 13, loss = 0.54518721
+Iteration 14, loss = 0.54261664
+Iteration 15, loss = 0.54185223
+Iteration 16, loss = 0.54000814
+Iteration 17, loss = 0.53864734
+Iteration 18, loss = 0.53805030
+Iteration 19, loss = 0.53831951
+Iteration 20, loss = 0.53498334
+Iteration 21, loss = 0.53501467
+Iteration 22, loss = 0.53336022
+Iteration 23, loss = 0.53216705
+Iteration 24, loss = 0.53232947
+Iteration 25, loss = 0.53001969
+Iteration 26, loss = 0.52966608
+Iteration 27, loss = 0.52864424
+Iteration 28, loss = 0.52823232
+Iteration 29, loss = 0.52849679
+Iteration 30, loss = 0.52699052
+Iteration 31, loss = 0.52666441
+Iteration 32, loss = 0.52689559
+Iteration 33, loss = 0.52573801
+Iteration 34, loss = 0.52423952
+Iteration 35, loss = 0.52320957
+Iteration 36, loss = 0.52247574
+Iteration 37, loss = 0.52214781
+Iteration 38, loss = 0.52089619
+Iteration 39, loss = 0.52104845
+Iteration 40, loss = 0.51944198
+Iteration 41, loss = 0.52223761
+Iteration 42, loss = 0.51984586
+Iteration 43, loss = 0.51751770
+Iteration 44, loss = 0.51754210
+Iteration 45, loss = 0.51682736
+Iteration 46, loss = 0.51756667
+Iteration 47, loss = 0.51589423
+Iteration 48, loss = 0.51728386
+Iteration 49, loss = 0.51934301
+Iteration 50, loss = 0.51423609
+Iteration 51, loss = 0.51370456
+Iteration 52, loss = 0.51403869
+Iteration 53, loss = 0.51221578
+Iteration 54, loss = 0.51470434
+Iteration 55, loss = 0.51180670
+Iteration 56, loss = 0.51151970
+Iteration 57, loss = 0.50988097
+Iteration 58, loss = 0.50987843
+Iteration 59, loss = 0.51060869
+Iteration 60, loss = 0.51118412
+Iteration 61, loss = 0.51030613
+Training loss did not improve more than tol=0.000000 for two consecutive epochs. Stopping.
+Time elapsed on network learning: 4.527529001235962
