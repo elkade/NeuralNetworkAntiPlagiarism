@@ -3,6 +3,7 @@ import pickle
 import threading
 import csv
 import ast
+import os.path
 
 class InputDataReader(object):
     def __init__(self, processor):
@@ -39,6 +40,8 @@ class InputDataReader(object):
         self.Y = []
         threads=[]
         output_path = 'features/part{}_{}_{}.csv'.format(partInd, startInd, endInd)
+        if os.path.isfile(output_path):
+            return None
         with open(output_path, 'a', newline='') as csvfile:
             writer = csv.DictWriter(csvfile, delimiter=';', quoting=csv.QUOTE_NONE, fieldnames=['x', 'y'])
             writer.writeheader()
