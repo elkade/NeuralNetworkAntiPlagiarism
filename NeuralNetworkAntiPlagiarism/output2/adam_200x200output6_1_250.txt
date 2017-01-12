@@ -1,0 +1,809 @@
+file index: 1
+start: dataSets/part6/suspicious-document02501
+file index: 2
+start: dataSets/part6/suspicious-document02502
+file index: 3
+start: dataSets/part6/suspicious-document02503
+file index: 4
+start: dataSets/part6/suspicious-document02504
+file index: 5
+start: dataSets/part6/suspicious-document02505
+file index: 6
+start: dataSets/part6/suspicious-document02506
+file index: 7
+start: dataSets/part6/suspicious-document02507
+file index: 8
+start: dataSets/part6/suspicious-document02508
+file index: 9
+start: dataSets/part6/suspicious-document02509
+file index: 10
+start: dataSets/part6/suspicious-document02510
+file index: 11
+start: dataSets/part6/suspicious-document02511
+file index: 12
+start: dataSets/part6/suspicious-document02512
+file index: 13
+start: dataSets/part6/suspicious-document02513
+file index: 14
+start: dataSets/part6/suspicious-document02514
+file index: 15
+end: dataSets/part6/suspicious-document02508
+start: dataSets/part6/suspicious-document02515
+file index: 16
+end: dataSets/part6/suspicious-document02503
+start: dataSets/part6/suspicious-document02516
+file index: 17
+start: dataSets/part6/suspicious-document02517
+file index: 18
+start: dataSets/part6/suspicious-document02518
+file index: 19
+start: dataSets/part6/suspicious-document02519
+file index: 20
+start: dataSets/part6/suspicious-document02520
+file index: 21
+start: dataSets/part6/suspicious-document02521
+file index: 22
+start: dataSets/part6/suspicious-document02522
+file index: 23
+start: dataSets/part6/suspicious-document02523
+file index: 24
+start: dataSets/part6/suspicious-document02524
+file index: 25
+start: dataSets/part6/suspicious-document02525
+file index: 26
+end: dataSets/part6/suspicious-document02517
+end: dataSets/part6/suspicious-document02522
+start: dataSets/part6/suspicious-document02526
+file index: 27
+start: dataSets/part6/suspicious-document02527
+file index: 28
+end: dataSets/part6/suspicious-document02509
+end: dataSets/part6/suspicious-document02524
+start: dataSets/part6/suspicious-document02528
+file index: 29
+end: dataSets/part6/suspicious-document02511
+start: dataSets/part6/suspicious-document02529
+file index: 30
+end: dataSets/part6/suspicious-document02526
+start: dataSets/part6/suspicious-document02530
+file index: 31
+start: dataSets/part6/suspicious-document02531
+file index: 32
+start: dataSets/part6/suspicious-document02532
+file index: 33
+start: dataSets/part6/suspicious-document02533
+file index: 34
+start: dataSets/part6/suspicious-document02534
+file index: 35
+start: dataSets/part6/suspicious-document02535
+file index: 36
+start: dataSets/part6/suspicious-document02536
+file index: 37
+start: dataSets/part6/suspicious-document02537
+file index: 38
+start: dataSets/part6/suspicious-document02538
+file index: 39
+start: dataSets/part6/suspicious-document02539
+file index: 40
+start: dataSets/part6/suspicious-document02540
+file index: 41
+start: dataSets/part6/suspicious-document02541
+file index: 42
+start: dataSets/part6/suspicious-document02542
+file index: 43
+start: dataSets/part6/suspicious-document02543
+file index: 44
+start: dataSets/part6/suspicious-document02544
+end: dataSets/part6/suspicious-document02505
+file index: 45
+end: dataSets/part6/suspicious-document02515
+end: dataSets/part6/suspicious-document02527
+start: dataSets/part6/suspicious-document02545
+file index: 46
+end: dataSets/part6/suspicious-document02525
+start: dataSets/part6/suspicious-document02546
+end: dataSets/part6/suspicious-document02532
+file index: 47
+end: dataSets/part6/suspicious-document02531
+start: dataSets/part6/suspicious-document02547
+file index: 48
+end: dataSets/part6/suspicious-document02533
+start: dataSets/part6/suspicious-document02548
+file index: 49
+end: dataSets/part6/suspicious-document02534
+end: dataSets/part6/suspicious-document02537
+start: dataSets/part6/suspicious-document02549
+file index: 50
+start: dataSets/part6/suspicious-document02550
+file index: 51
+start: dataSets/part6/suspicious-document02551
+file index: 52
+start: dataSets/part6/suspicious-document02552
+file index: 53
+start: dataSets/part6/suspicious-document02553
+file index: 54
+start: dataSets/part6/suspicious-document02554
+file index: 55
+start: dataSets/part6/suspicious-document02555
+end: dataSets/part6/suspicious-document02518
+file index: 56
+start: dataSets/part6/suspicious-document02556
+file index: 57
+end: dataSets/part6/suspicious-document02514
+start: dataSets/part6/suspicious-document02557
+file index: 58
+end: dataSets/part6/suspicious-document02540
+start: dataSets/part6/suspicious-document02558
+file index: 59
+start: dataSets/part6/suspicious-document02559
+file index: 60
+start: dataSets/part6/suspicious-document02560
+file index: 61
+start: dataSets/part6/suspicious-document02561
+file index: 62
+start: dataSets/part6/suspicious-document02562
+file index: 63
+start: dataSets/part6/suspicious-document02563
+file index: 64
+start: dataSets/part6/suspicious-document02564
+file index: 65
+start: dataSets/part6/suspicious-document02565
+file index: 66
+start: dataSets/part6/suspicious-document02566
+file index: 67
+start: dataSets/part6/suspicious-document02567
+file index: 68
+start: dataSets/part6/suspicious-document02568
+file index: 69
+start: dataSets/part6/suspicious-document02569
+file index: 70
+start: dataSets/part6/suspicious-document02570
+file index: 71
+start: dataSets/part6/suspicious-document02571
+file index: 72
+start: dataSets/part6/suspicious-document02572
+end: dataSets/part6/suspicious-document02502
+file index: 73
+start: dataSets/part6/suspicious-document02573
+file index: 74
+end: dataSets/part6/suspicious-document02544
+start: dataSets/part6/suspicious-document02574
+file index: 75
+end: dataSets/part6/suspicious-document02548
+start: dataSets/part6/suspicious-document02575
+file index: 76
+start: dataSets/part6/suspicious-document02576
+file index: 77
+start: dataSets/part6/suspicious-document02577
+file index: 78
+end: dataSets/part6/suspicious-document02539
+end: dataSets/part6/suspicious-document02545
+start: dataSets/part6/suspicious-document02578
+file index: 79
+end: dataSets/part6/suspicious-document02553
+start: dataSets/part6/suspicious-document02579
+file index: 80
+end: dataSets/part6/suspicious-document02523
+end: dataSets/part6/suspicious-document02510
+end: dataSets/part6/suspicious-document02550
+end: dataSets/part6/suspicious-document02555
+end: dataSets/part6/suspicious-document02513
+end: dataSets/part6/suspicious-document02559
+start: dataSets/part6/suspicious-document02580
+file index: 81
+start: dataSets/part6/suspicious-document02581
+file index: 82
+start: dataSets/part6/suspicious-document02582
+file index: 83
+start: dataSets/part6/suspicious-document02583
+file index: 84
+start: dataSets/part6/suspicious-document02584
+file index: 85
+start: dataSets/part6/suspicious-document02585
+file index: 86
+start: dataSets/part6/suspicious-document02586
+file index: 87
+start: dataSets/part6/suspicious-document02587
+file index: 88
+start: dataSets/part6/suspicious-document02588
+file index: 89
+start: dataSets/part6/suspicious-document02589
+file index: 90
+end: dataSets/part6/suspicious-document02546
+start: dataSets/part6/suspicious-document02590
+file index: 91
+start: dataSets/part6/suspicious-document02591
+file index: 92
+start: dataSets/part6/suspicious-document02592
+file index: 93
+start: dataSets/part6/suspicious-document02593
+file index: 94
+start: dataSets/part6/suspicious-document02594
+file index: 95
+end: dataSets/part6/suspicious-document02563
+start: dataSets/part6/suspicious-document02595
+file index: 96
+end: dataSets/part6/suspicious-document02538
+start: dataSets/part6/suspicious-document02596
+file index: 97
+end: dataSets/part6/suspicious-document02557
+start: dataSets/part6/suspicious-document02597
+file index: 98
+start: dataSets/part6/suspicious-document02598
+file index: 99
+end: dataSets/part6/suspicious-document02507
+start: dataSets/part6/suspicious-document02599
+file index: 100
+start: dataSets/part6/suspicious-document02600
+end: dataSets/part6/suspicious-document02535
+file index: 101
+start: dataSets/part6/suspicious-document02601
+file index: 102
+start: dataSets/part6/suspicious-document02602
+file index: 103
+start: dataSets/part6/suspicious-document02603
+file index: 104
+start: dataSets/part6/suspicious-document02604
+file index: 105
+start: dataSets/part6/suspicious-document02605
+file index: 106
+start: dataSets/part6/suspicious-document02606
+file index: 107
+start: dataSets/part6/suspicious-document02607
+file index: 108
+start: dataSets/part6/suspicious-document02608
+file index: 109
+start: dataSets/part6/suspicious-document02609
+file index: 110
+start: dataSets/part6/suspicious-document02610
+file index: 111
+start: dataSets/part6/suspicious-document02611
+file index: 112
+start: dataSets/part6/suspicious-document02612
+file index: 113
+end: dataSets/part6/suspicious-document02556
+end: dataSets/part6/suspicious-document02516
+file index: 114
+start: dataSets/part6/suspicious-document02613
+start: dataSets/part6/suspicious-document02614
+file index: 115
+start: dataSets/part6/suspicious-document02615
+file index: 116
+start: dataSets/part6/suspicious-document02616
+file index: 117
+start: dataSets/part6/suspicious-document02617
+file index: 118
+start: dataSets/part6/suspicious-document02618
+file index: 119
+start: dataSets/part6/suspicious-document02619
+file index: 120
+end: dataSets/part6/suspicious-document02554
+start: dataSets/part6/suspicious-document02620
+end: dataSets/part6/suspicious-document02512
+file index: 121
+start: dataSets/part6/suspicious-document02621
+file index: 122
+start: dataSets/part6/suspicious-document02622
+file index: 123
+start: dataSets/part6/suspicious-document02623
+file index: 124
+start: dataSets/part6/suspicious-document02624
+file index: 125
+start: dataSets/part6/suspicious-document02625
+file index: 126
+start: dataSets/part6/suspicious-document02626
+file index: 127
+start: dataSets/part6/suspicious-document02627
+file index: 128
+start: dataSets/part6/suspicious-document02628
+file index: 129
+start: dataSets/part6/suspicious-document02629
+file index: 130
+start: dataSets/part6/suspicious-document02630
+file index: 131
+end: dataSets/part6/suspicious-document02528
+start: dataSets/part6/suspicious-document02631
+file index: 132
+end: dataSets/part6/suspicious-document02578
+start: dataSets/part6/suspicious-document02632
+file index: 133
+end: dataSets/part6/suspicious-document02551
+start: dataSets/part6/suspicious-document02633
+file index: 134
+end: dataSets/part6/suspicious-document02576
+start: dataSets/part6/suspicious-document02634
+file index: 135
+start: dataSets/part6/suspicious-document02635
+file index: 136
+end: dataSets/part6/suspicious-document02536
+start: dataSets/part6/suspicious-document02636
+file index: 137
+start: dataSets/part6/suspicious-document02637
+file index: 138
+start: dataSets/part6/suspicious-document02638
+file index: 139
+start: dataSets/part6/suspicious-document02639
+file index: 140
+start: dataSets/part6/suspicious-document02640
+file index: 141
+start: dataSets/part6/suspicious-document02641
+file index: 142
+start: dataSets/part6/suspicious-document02642
+file index: 143
+start: dataSets/part6/suspicious-document02643
+file index: 144
+start: dataSets/part6/suspicious-document02644
+file index: 145
+start: dataSets/part6/suspicious-document02645
+file index: 146
+start: dataSets/part6/suspicious-document02646
+file index: 147
+start: dataSets/part6/suspicious-document02647
+file index: 148
+start: dataSets/part6/suspicious-document02648
+file index: 149
+start: dataSets/part6/suspicious-document02649
+file index: 150
+start: dataSets/part6/suspicious-document02650
+file index: 151
+start: dataSets/part6/suspicious-document02651
+file index: 152
+end: dataSets/part6/suspicious-document02543
+start: dataSets/part6/suspicious-document02652
+file index: 153
+start: dataSets/part6/suspicious-document02653
+file index: 154
+start: dataSets/part6/suspicious-document02654
+file index: 155
+end: dataSets/part6/suspicious-document02581
+end: dataSets/part6/suspicious-document02566
+start: dataSets/part6/suspicious-document02655
+end: dataSets/part6/suspicious-document02501
+file index: 156
+end: dataSets/part6/suspicious-document02589
+start: dataSets/part6/suspicious-document02656
+file index: 157
+start: dataSets/part6/suspicious-document02657
+file index: 158
+start: dataSets/part6/suspicious-document02658
+file index: 159
+start: dataSets/part6/suspicious-document02659
+file index: 160
+end: dataSets/part6/suspicious-document02561
+start: dataSets/part6/suspicious-document02660
+file index: 161
+start: dataSets/part6/suspicious-document02661
+file index: 162
+start: dataSets/part6/suspicious-document02662
+file index: 163
+start: dataSets/part6/suspicious-document02663
+file index: 164
+end: dataSets/part6/suspicious-document02582
+end: dataSets/part6/suspicious-document02591
+start: dataSets/part6/suspicious-document02664
+file index: 165
+start: dataSets/part6/suspicious-document02665
+file index: 166
+start: dataSets/part6/suspicious-document02666
+file index: 167
+start: dataSets/part6/suspicious-document02667
+file index: 168
+start: dataSets/part6/suspicious-document02668
+file index: 169
+start: dataSets/part6/suspicious-document02669
+file index: 170
+start: dataSets/part6/suspicious-document02670
+file index: 171
+start: dataSets/part6/suspicious-document02671
+file index: 172
+start: dataSets/part6/suspicious-document02672
+file index: 173
+start: dataSets/part6/suspicious-document02673
+file index: 174
+end: dataSets/part6/suspicious-document02504
+start: dataSets/part6/suspicious-document02674
+file index: 175
+start: dataSets/part6/suspicious-document02675
+end: dataSets/part6/suspicious-document02577
+file index: 176
+start: dataSets/part6/suspicious-document02676
+file index: 177
+start: dataSets/part6/suspicious-document02677
+file index: 178
+start: dataSets/part6/suspicious-document02678
+file index: 179
+start: dataSets/part6/suspicious-document02679
+file index: 180
+start: dataSets/part6/suspicious-document02680
+file index: 181
+start: dataSets/part6/suspicious-document02681
+file index: 182
+start: dataSets/part6/suspicious-document02682
+file index: 183
+start: dataSets/part6/suspicious-document02683
+file index: 184
+start: dataSets/part6/suspicious-document02684
+file index: 185
+start: dataSets/part6/suspicious-document02685
+file index: 186
+start: dataSets/part6/suspicious-document02686
+file index: 187
+start: dataSets/part6/suspicious-document02687
+file index: 188
+start: dataSets/part6/suspicious-document02688
+file index: 189
+start: dataSets/part6/suspicious-document02689
+file index: 190
+start: dataSets/part6/suspicious-document02690
+file index: 191
+start: dataSets/part6/suspicious-document02691
+file index: 192
+start: dataSets/part6/suspicious-document02692
+file index: 193
+start: dataSets/part6/suspicious-document02693
+file index: 194
+start: dataSets/part6/suspicious-document02694
+file index: 195
+start: dataSets/part6/suspicious-document02695
+file index: 196
+end: dataSets/part6/suspicious-document02574
+start: dataSets/part6/suspicious-document02696
+file index: 197
+start: dataSets/part6/suspicious-document02697
+file index: 198
+start: dataSets/part6/suspicious-document02698
+end: dataSets/part6/suspicious-document02598
+file index: 199
+start: dataSets/part6/suspicious-document02699
+file index: 200
+start: dataSets/part6/suspicious-document02700
+file index: 201
+start: dataSets/part6/suspicious-document02701
+file index: 202
+start: dataSets/part6/suspicious-document02702
+file index: 203
+end: dataSets/part6/suspicious-document02519
+start: dataSets/part6/suspicious-document02703
+file index: 204
+start: dataSets/part6/suspicious-document02704
+file index: 205
+end: dataSets/part6/suspicious-document02595
+start: dataSets/part6/suspicious-document02705
+file index: 206
+end: dataSets/part6/suspicious-document02602
+start: dataSets/part6/suspicious-document02706
+file index: 207
+end: dataSets/part6/suspicious-document02607
+start: dataSets/part6/suspicious-document02707
+file index: 208
+end: dataSets/part6/suspicious-document02599
+start: dataSets/part6/suspicious-document02708
+file index: 209
+start: dataSets/part6/suspicious-document02709
+file index: 210
+start: dataSets/part6/suspicious-document02710
+file index: 211
+start: dataSets/part6/suspicious-document02711
+file index: 212
+start: dataSets/part6/suspicious-document02712
+file index: 213
+start: dataSets/part6/suspicious-document02713
+file index: 214
+start: dataSets/part6/suspicious-document02714
+file index: 215
+start: dataSets/part6/suspicious-document02715
+file index: 216
+start: dataSets/part6/suspicious-document02716
+file index: 217
+start: dataSets/part6/suspicious-document02717
+file index: 218
+start: dataSets/part6/suspicious-document02718
+file index: 219
+start: dataSets/part6/suspicious-document02719
+file index: 220
+start: dataSets/part6/suspicious-document02720
+file index: 221
+start: dataSets/part6/suspicious-document02721
+file index: 222
+start: dataSets/part6/suspicious-document02722
+file index: 223
+start: dataSets/part6/suspicious-document02723
+file index: 224
+start: dataSets/part6/suspicious-document02724
+file index: 225
+start: dataSets/part6/suspicious-document02725
+file index: 226
+end: dataSets/part6/suspicious-document02521
+start: dataSets/part6/suspicious-document02726
+file index: 227
+start: dataSets/part6/suspicious-document02727
+file index: 228
+start: dataSets/part6/suspicious-document02728
+file index: 229
+start: dataSets/part6/suspicious-document02729
+file index: 230
+start: dataSets/part6/suspicious-document02730
+file index: 231
+start: dataSets/part6/suspicious-document02731
+file index: 232
+start: dataSets/part6/suspicious-document02732
+file index: 233
+start: dataSets/part6/suspicious-document02733
+file index: 234
+start: dataSets/part6/suspicious-document02734
+file index: 235
+start: dataSets/part6/suspicious-document02735
+file index: 236
+start: dataSets/part6/suspicious-document02736
+file index: 237
+start: dataSets/part6/suspicious-document02737
+file index: 238
+start: dataSets/part6/suspicious-document02738
+file index: 239
+start: dataSets/part6/suspicious-document02739
+file index: 240
+start: dataSets/part6/suspicious-document02740
+file index: 241
+start: dataSets/part6/suspicious-document02741
+file index: 242
+start: dataSets/part6/suspicious-document02742
+file index: 243
+start: dataSets/part6/suspicious-document02743
+file index: 244
+start: dataSets/part6/suspicious-document02744
+file index: 245
+start: dataSets/part6/suspicious-document02745
+file index: 246
+end: dataSets/part6/suspicious-document02541
+start: dataSets/part6/suspicious-document02746
+file index: 247
+start: dataSets/part6/suspicious-document02747
+file index: 248
+start: dataSets/part6/suspicious-document02748
+file index: 249
+start: dataSets/part6/suspicious-document02749
+end: dataSets/part6/suspicious-document02547
+end: dataSets/part6/suspicious-document02552
+end: dataSets/part6/suspicious-document02558
+end: dataSets/part6/suspicious-document02560
+end: dataSets/part6/suspicious-document02562
+end: dataSets/part6/suspicious-document02565
+end: dataSets/part6/suspicious-document02567
+end: dataSets/part6/suspicious-document02568
+end: dataSets/part6/suspicious-document02569
+end: dataSets/part6/suspicious-document02570
+end: dataSets/part6/suspicious-document02571
+end: dataSets/part6/suspicious-document02572
+end: dataSets/part6/suspicious-document02575
+end: dataSets/part6/suspicious-document02579
+end: dataSets/part6/suspicious-document02580
+end: dataSets/part6/suspicious-document02583
+end: dataSets/part6/suspicious-document02584
+end: dataSets/part6/suspicious-document02587
+end: dataSets/part6/suspicious-document02590
+end: dataSets/part6/suspicious-document02594
+end: dataSets/part6/suspicious-document02597
+end: dataSets/part6/suspicious-document02601
+end: dataSets/part6/suspicious-document02605
+end: dataSets/part6/suspicious-document02612
+end: dataSets/part6/suspicious-document02613
+end: dataSets/part6/suspicious-document02614
+end: dataSets/part6/suspicious-document02615
+end: dataSets/part6/suspicious-document02616
+end: dataSets/part6/suspicious-document02617
+end: dataSets/part6/suspicious-document02618
+end: dataSets/part6/suspicious-document02620
+end: dataSets/part6/suspicious-document02621
+end: dataSets/part6/suspicious-document02622
+end: dataSets/part6/suspicious-document02623
+end: dataSets/part6/suspicious-document02625
+end: dataSets/part6/suspicious-document02626
+end: dataSets/part6/suspicious-document02627
+end: dataSets/part6/suspicious-document02628
+end: dataSets/part6/suspicious-document02629
+end: dataSets/part6/suspicious-document02630
+end: dataSets/part6/suspicious-document02631
+end: dataSets/part6/suspicious-document02632
+end: dataSets/part6/suspicious-document02633
+end: dataSets/part6/suspicious-document02634
+end: dataSets/part6/suspicious-document02635
+end: dataSets/part6/suspicious-document02636
+end: dataSets/part6/suspicious-document02637
+end: dataSets/part6/suspicious-document02638
+end: dataSets/part6/suspicious-document02639
+end: dataSets/part6/suspicious-document02640
+end: dataSets/part6/suspicious-document02642
+end: dataSets/part6/suspicious-document02643
+end: dataSets/part6/suspicious-document02644
+end: dataSets/part6/suspicious-document02647
+end: dataSets/part6/suspicious-document02648
+end: dataSets/part6/suspicious-document02649
+end: dataSets/part6/suspicious-document02651
+end: dataSets/part6/suspicious-document02652
+end: dataSets/part6/suspicious-document02656
+end: dataSets/part6/suspicious-document02657
+end: dataSets/part6/suspicious-document02658
+end: dataSets/part6/suspicious-document02659
+end: dataSets/part6/suspicious-document02660
+end: dataSets/part6/suspicious-document02661
+end: dataSets/part6/suspicious-document02662
+end: dataSets/part6/suspicious-document02663
+end: dataSets/part6/suspicious-document02664
+end: dataSets/part6/suspicious-document02667
+end: dataSets/part6/suspicious-document02668
+end: dataSets/part6/suspicious-document02670
+end: dataSets/part6/suspicious-document02671
+end: dataSets/part6/suspicious-document02674
+end: dataSets/part6/suspicious-document02676
+end: dataSets/part6/suspicious-document02677
+end: dataSets/part6/suspicious-document02678
+end: dataSets/part6/suspicious-document02679
+end: dataSets/part6/suspicious-document02680
+end: dataSets/part6/suspicious-document02681
+end: dataSets/part6/suspicious-document02684
+end: dataSets/part6/suspicious-document02685
+end: dataSets/part6/suspicious-document02686
+end: dataSets/part6/suspicious-document02687
+end: dataSets/part6/suspicious-document02688
+end: dataSets/part6/suspicious-document02689
+end: dataSets/part6/suspicious-document02693
+end: dataSets/part6/suspicious-document02696
+end: dataSets/part6/suspicious-document02697
+end: dataSets/part6/suspicious-document02699
+end: dataSets/part6/suspicious-document02702
+end: dataSets/part6/suspicious-document02709
+end: dataSets/part6/suspicious-document02713
+end: dataSets/part6/suspicious-document02717
+end: dataSets/part6/suspicious-document02529
+end: dataSets/part6/suspicious-document02714
+end: dataSets/part6/suspicious-document02715
+end: dataSets/part6/suspicious-document02698
+end: dataSets/part6/suspicious-document02588
+end: dataSets/part6/suspicious-document02666
+end: dataSets/part6/suspicious-document02711
+end: dataSets/part6/suspicious-document02706
+end: dataSets/part6/suspicious-document02542
+end: dataSets/part6/suspicious-document02701
+end: dataSets/part6/suspicious-document02727
+end: dataSets/part6/suspicious-document02723
+end: dataSets/part6/suspicious-document02724
+end: dataSets/part6/suspicious-document02728
+end: dataSets/part6/suspicious-document02730
+end: dataSets/part6/suspicious-document02716
+end: dataSets/part6/suspicious-document02691
+end: dataSets/part6/suspicious-document02710
+end: dataSets/part6/suspicious-document02735
+end: dataSets/part6/suspicious-document02654
+end: dataSets/part6/suspicious-document02719
+end: dataSets/part6/suspicious-document02733
+end: dataSets/part6/suspicious-document02747
+end: dataSets/part6/suspicious-document02705
+end: dataSets/part6/suspicious-document02703
+end: dataSets/part6/suspicious-document02736
+end: dataSets/part6/suspicious-document02720
+end: dataSets/part6/suspicious-document02683
+end: dataSets/part6/suspicious-document02573
+end: dataSets/part6/suspicious-document02520
+end: dataSets/part6/suspicious-document02692
+end: dataSets/part6/suspicious-document02675
+end: dataSets/part6/suspicious-document02641
+end: dataSets/part6/suspicious-document02734
+end: dataSets/part6/suspicious-document02694
+end: dataSets/part6/suspicious-document02739
+end: dataSets/part6/suspicious-document02610
+end: dataSets/part6/suspicious-document02749
+end: dataSets/part6/suspicious-document02704
+end: dataSets/part6/suspicious-document02742
+end: dataSets/part6/suspicious-document02673
+end: dataSets/part6/suspicious-document02738
+end: dataSets/part6/suspicious-document02665
+end: dataSets/part6/suspicious-document02732
+end: dataSets/part6/suspicious-document02593
+end: dataSets/part6/suspicious-document02690
+end: dataSets/part6/suspicious-document02653
+end: dataSets/part6/suspicious-document02564
+end: dataSets/part6/suspicious-document02646
+end: dataSets/part6/suspicious-document02506
+end: dataSets/part6/suspicious-document02530
+end: dataSets/part6/suspicious-document02549
+end: dataSets/part6/suspicious-document02585
+end: dataSets/part6/suspicious-document02586
+end: dataSets/part6/suspicious-document02596
+end: dataSets/part6/suspicious-document02600
+end: dataSets/part6/suspicious-document02603
+end: dataSets/part6/suspicious-document02604
+end: dataSets/part6/suspicious-document02606
+end: dataSets/part6/suspicious-document02608
+end: dataSets/part6/suspicious-document02609
+end: dataSets/part6/suspicious-document02619
+end: dataSets/part6/suspicious-document02624
+end: dataSets/part6/suspicious-document02645
+end: dataSets/part6/suspicious-document02650
+end: dataSets/part6/suspicious-document02655
+end: dataSets/part6/suspicious-document02669
+end: dataSets/part6/suspicious-document02672
+end: dataSets/part6/suspicious-document02682
+end: dataSets/part6/suspicious-document02695
+end: dataSets/part6/suspicious-document02700
+end: dataSets/part6/suspicious-document02707
+end: dataSets/part6/suspicious-document02708
+end: dataSets/part6/suspicious-document02712
+end: dataSets/part6/suspicious-document02718
+end: dataSets/part6/suspicious-document02721
+end: dataSets/part6/suspicious-document02722
+end: dataSets/part6/suspicious-document02725
+end: dataSets/part6/suspicious-document02726
+end: dataSets/part6/suspicious-document02729
+end: dataSets/part6/suspicious-document02731
+end: dataSets/part6/suspicious-document02737
+end: dataSets/part6/suspicious-document02740
+end: dataSets/part6/suspicious-document02741
+end: dataSets/part6/suspicious-document02743
+end: dataSets/part6/suspicious-document02744
+end: dataSets/part6/suspicious-document02745
+end: dataSets/part6/suspicious-document02746
+end: dataSets/part6/suspicious-document02748
+end: dataSets/part6/suspicious-document02592
+end: dataSets/part6/suspicious-document02611
+Time elapsed on feature extraction: 1821.5544922351837
+Time elapsed on reading serialized features: 22.412761688232422
+MLPClassifier(activation='tanh', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(200, 200), learning_rate='constant',
+       learning_rate_init=0.001, max_iter=200, momentum=0.9,
+       nesterovs_momentum=True, power_t=0.5, random_state=None,
+       shuffle=True, solver='adam', tol=0.0, validation_fraction=0.1,
+       verbose=True, warm_start=False)
+Iteration 1, loss = 0.25461161
+Iteration 2, loss = 0.22995461
+Iteration 3, loss = 0.22706279
+Iteration 4, loss = 0.22554483
+Iteration 5, loss = 0.22376776
+Iteration 6, loss = 0.22227048
+Iteration 7, loss = 0.22117157
+Iteration 8, loss = 0.21949810
+Iteration 9, loss = 0.21878531
+Iteration 10, loss = 0.21752266
+Iteration 11, loss = 0.21724528
+Iteration 12, loss = 0.21649745
+Iteration 13, loss = 0.21578409
+Iteration 14, loss = 0.21472674
+Iteration 15, loss = 0.21419496
+Iteration 16, loss = 0.21391197
+Iteration 17, loss = 0.21255246
+Iteration 18, loss = 0.21223009
+Iteration 19, loss = 0.21157094
+Iteration 20, loss = 0.21084276
+Iteration 21, loss = 0.21027323
+Iteration 22, loss = 0.20937053
+Iteration 23, loss = 0.20834377
+Iteration 24, loss = 0.20784277
+Iteration 25, loss = 0.20746062
+Iteration 26, loss = 0.20669159
+Iteration 27, loss = 0.20629266
+Iteration 28, loss = 0.20578957
+Iteration 29, loss = 0.20525977
+Iteration 30, loss = 0.20435437
+Iteration 31, loss = 0.20471997
+Iteration 32, loss = 0.20397872
+Iteration 33, loss = 0.20349682
+Iteration 34, loss = 0.20349115
+Iteration 35, loss = 0.20253512
+Iteration 36, loss = 0.20227027
+Iteration 37, loss = 0.20195920
+Iteration 38, loss = 0.20138332
+Iteration 39, loss = 0.20120159
+Iteration 40, loss = 0.20089990
+Iteration 41, loss = 0.20091144
+Iteration 42, loss = 0.20010187
+Iteration 43, loss = 0.20014197
+Iteration 44, loss = 0.19966793
+Iteration 45, loss = 0.19953964
+Iteration 46, loss = 0.19888214
+Iteration 47, loss = 0.19795423
+Iteration 48, loss = 0.19774207
+Iteration 49, loss = 0.20054322
+Iteration 50, loss = 0.20615374
+Iteration 51, loss = 0.20354538
+Training loss did not improve more than tol=0.000000 for two consecutive epochs. Stopping.
+Time elapsed on network learning: 50.913151264190674

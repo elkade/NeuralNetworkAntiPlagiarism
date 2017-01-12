@@ -39,7 +39,7 @@ class InputDataReader(object):
         self.X = []
         self.Y = []
         threads=[]
-        output_path = 'features/part{}_{}_{}.csv'.format(partInd, startInd, endInd)
+        output_path = 'features2/part{}_{}_{}.csv'.format(partInd, startInd, endInd)
         if os.path.isfile(output_path):
             return None
         with open(output_path, 'a', newline='') as csvfile:
@@ -64,7 +64,7 @@ class InputDataReader(object):
         X, y = [], []
         buf = []
         try:
-            with open('features/{}'.format(filename), 'r', newline='') as csvfile:
+            with open('features2/{}'.format(filename), 'r', newline='') as csvfile:
                 reader = csv.DictReader(csvfile, delimiter=';', quoting=csv.QUOTE_NONE)
                 for row in reader:
                     y.append(float(row['y']))

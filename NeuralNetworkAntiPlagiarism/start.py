@@ -11,9 +11,9 @@ import sys
 import winsound
 try:
 
-    part, start, end, hidden, solver = 7, 1, 500, 200, 'sgd'
+    part, start, end, hidden, solver = 6, 1, 250, 200, 'adam'
     #
-    sys.stdout = open('output/{}_{}x{}output{}_{}_{}.txt'.format(solver, hidden, hidden, part, start, end), 'w+', 1)
+    sys.stdout = open('output2/{}_{}x{}output{}_{}_{}.txt'.format(solver, hidden, hidden, part, start, end), 'w+', 1)
     #
 
     start_time = time.time()

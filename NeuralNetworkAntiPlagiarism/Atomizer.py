@@ -14,7 +14,7 @@ class Atomizer(object):
             fragments = []
             plag_frags = self.GetFullyPlagiarizedFragments(text, metadata)
             for frag in plag_frags:
-                paragraphs = self._GetParagraphs(frag)
+                paragraphs = plag_frags#self._GetParagraphs(frag)
                 for parag in paragraphs:
                     if len(parag) > 200:
                         fragments.append(parag)
