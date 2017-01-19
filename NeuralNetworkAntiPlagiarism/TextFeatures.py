@@ -19,8 +19,11 @@
         self.FOG=index
     def SetTextLength(self, length):
         self.length=length
+    def SetHonoreRMeasure(self, coeff):
+        self.SetHonoreRMeasure=coeff
     def toFeatureList(self):
-        featureList = [self.dots, self.commas, self.wordPerSent, self.letterPerWord, self.upperLetters, self.readabilityEase, self.syllablesPerWord]
+        featureList = [self.dots, self.commas, self.wordPerSent, self.letterPerWord, self.upperLetters, self.readabilityEase, self.syllablesPerWord \
+            , self.SetHonoreRMeasure]
         for (word) in self.wordsFrequency:
             featureList.append(self.wordsFrequency[word])
         return featureList
