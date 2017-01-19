@@ -21,13 +21,26 @@ class FeaturesExtractor(object):
         features.SetReadabilityEase(206.835 - (1.015 * features.wordPerSent) - (84.6 * features.syllablesPerWord))
         features.SetFOG(0.4*(wordCount/sentCount+100*sum(1 for w in words if self.syllables(w)>=3)/wordCount))
         features.SetHonoreRMeasure(self.GetRMeasure(frequency, wordCount))
+        features.SetYuleKMeasure(self.GetKMeasure(frequency, wordCount))
         return features.toFeatureList()
+    def GetKMeasure(self, frequency, wordCount):
+        V={}
+        for (word, count) in frequency.items():
+            if count not in V:
+                V[count]=0
+            V[count]=V[count]+1
+        K=0
+        for (i, count) in V.items():
+            K=K+i*i*count
+        K=K-len(V)*wordCount
+        K=10000*K/(wordCount*wordCount)
+        return K
     def GetRMeasure(self, frequency, wordCount):
-        return 100*log10(wordCount)*(1-self.V(1, frequency)/len(frequency))
-    def V(self, index, frequency):
+        return 100*log10(wordCount)*(1-self.V1(frequency)/len(frequency))
+    def V1(self, frequency):
         totalCount=0
         for (word, count) in frequency.items():
-            if count==index:
+            if count==1:
                 totalCount=totalCount+1
         return totalCount
     def GetWordsFrequency(self, frequency, words, textLength):

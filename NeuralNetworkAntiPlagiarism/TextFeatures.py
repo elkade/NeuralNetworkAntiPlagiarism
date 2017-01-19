@@ -20,10 +20,12 @@
     def SetTextLength(self, length):
         self.length=length
     def SetHonoreRMeasure(self, coeff):
-        self.SetHonoreRMeasure=coeff
+        self.HonoreRMeasure=coeff
+    def SetYuleKMeasure(self, coeff):
+        self.YuleKMeasure=coeff
     def toFeatureList(self):
         featureList = [self.dots, self.commas, self.wordPerSent, self.letterPerWord, self.upperLetters, self.readabilityEase, self.syllablesPerWord \
-            , self.SetHonoreRMeasure]
+            , self.HonoreRMeasure, self.YuleKMeasure]
         for (word) in self.wordsFrequency:
             featureList.append(self.wordsFrequency[word])
         return featureList
