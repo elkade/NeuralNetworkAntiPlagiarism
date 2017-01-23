@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>71c32fb6-41c3-4dd2-9b50-441259adeba3</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>start.py</StartupFile>
+    <StartupFile>startDocument.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -50,6 +50,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="start.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="startDocument.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="startTest.py">

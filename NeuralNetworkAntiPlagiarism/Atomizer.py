@@ -25,7 +25,8 @@ class Atomizer(object):
             return self.GetParagraphs(text, metadata)
 
     def _GetParagraphs(self, text):
-        paragraphs = text.split("\n\n")
+        paragraphs = text.split("\n")
+        paragraphs = [p for p in paragraphs if len(p)>10]
         return paragraphs
     def GetParagraphs(self, text, metadata):
         paragraphs = text.split("\n\n")
